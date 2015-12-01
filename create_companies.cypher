@@ -10,7 +10,7 @@
 //---------------------------------------------------------------------------------------
 USING PERIODIC COMMIT 500
 LOAD CSV WITH HEADERS 
-FROM "file:/Users/janetprumachuk/dev/Python/Columbia/BDAProject/all_companies.csv" AS row
+FROM "file:/home/Columbia/DATA/all_companies.csv" AS row
 FIELDTERMINATOR '|'
 CREATE (:Company {ID: row.ID, 
                   Name: row.Name, 
