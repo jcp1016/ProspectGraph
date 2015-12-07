@@ -7,11 +7,12 @@
 # 2) an integer specifying the number of keywords to return, e.g. 20
 #
 # Author:  Janet Prumachuk
-# Date  :  Nov 2015
+# Date  :  Dec 2015
 #-----------------------------------------------------------------
 import re, nltk, urllib2, sys, mechanize
 from html2text import html2text 
 from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 
 def fetch_html(url_string):
     br = mechanize.Browser()
@@ -58,25 +59,27 @@ def compute_fdist(tokens):
     new_text = [w.lower() for w in new_text if w.isalpha()]
    
     # Keep only nouns
-    tags = nltk.pos_tag(new_text)
-    new_text = [w for w,cd in tags if (cd[0] in ['N','R'])]
+    #tags = nltk.pos_tag(new_text)
+    #new_text = [w for w,cd in tags if (cd[0] in ['N','R'])]
 
-    # Stem the words 
-    stemmer = nltk.stem.snowball.SnowballStemmer('english')
-    new_text = [stemmer.stem(w) for w in new_text]
+    # Lemmatize the word (gives us better results than stemming)
+    lemma = WordNetLemmatizer()
+    new_text = map(lemma.lemmatize, new_text)
+    #print( new_text )
 
     # Remove stopwords 
     stopwords = nltk.corpus.stopwords.words('english')
-    custom_list = ['facebook', 'twitter', 'instagram', 'pinterest', 'youtube', 'google',
-                   'blog', 'help', 'give', 'donate', 'way', 'join', 'make', 'month', 'week',
-                   'day', 'year', 'time', 'name', 'team', 'fundraise', 'key', 'search', 'way',
-                   'today', 'member', 'program', 'event', 'york', 'membership', 'visit', 'support',
-                   'day', 'night', 'show', 'fall', 'winter', 'spring', 'summer', 'gift', 
-                   'benefit', 'state', 'stay', 'height', 'video', 'email', 'money', 'news',
+    custom_list = ['facebook', 'twitter', 'instagram', 'pinterest', 'youtube', 
+                   'google', 'blog', 'help', 'give', 'donate', 'way', 'join', 
+                   'make', 'month', 'week', 'day', 'year', 'time', 'name', 
+                   'team', 'fundraise', 'key', 'search', 'way', 'today', 
+                   'member', 'program', 'event', 'york', 'membership', 
+                   'visit', 'support', 'day', 'night', 'show', 'fall', 
+                   'winter', 'spring', 'summer', 'gift', 'benefit', 'state', 
+                   'stay', 'height', 'video', 'email', 'money', 'news',
                    'opportunity', 'donate', 'press', 'faq']
-    custom_stopwords = [unicode(i) for i in custom_list]
 
-    #print( custom_stopwords )
+    custom_stopwords = [unicode(i) for i in custom_list]
     stopwords.extend( custom_stopwords )
     new_text = [w for w in new_text if w not in stopwords]
 
