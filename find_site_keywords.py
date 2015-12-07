@@ -108,7 +108,7 @@ def main():
     #print keywords
 
     # Show the top n words
-    print( "Top " + str(N) + " word stems found for " + url + ":")
+    print( "Top " + str(N) + " words found for " + url + ":")
     for word, freq in keywords.most_common(N):
         print ('%s, %d' % (word, freq)).encode('utf-8')
 
