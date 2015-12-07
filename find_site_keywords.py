@@ -49,10 +49,10 @@ def clean_html(html):
 
 def compute_fdist(tokens):
     # Applies text mining techniques from the NLTK package and 
-    # calculates the frequency distribution of word stems, excluding stopwords
+    # calculates the frequency distribution of words, excluding stopwords
 
     # Remove single character tokens and numbers
-    new_text = [w for w in tokens if len(w) > 2]
+    new_text = [w for w in tokens if len(w) > 3]
     new_text = [w for w in new_text if not w.isnumeric()]
 
     # De-punctuate and convert to lowercase
@@ -77,11 +77,14 @@ def compute_fdist(tokens):
                    'visit', 'support', 'day', 'night', 'show', 'fall', 
                    'winter', 'spring', 'summer', 'gift', 'benefit', 'state', 
                    'stay', 'height', 'video', 'email', 'money', 'news',
-                   'opportunity', 'donate', 'press', 'faq']
+                   'opportunity', 'donate', 'press', 'faq', 'infographic',
+                   'find', 'save', 'new', 'site', 'story', 'view', 'share',
+                   'become', 'center', 'holiday']
 
     custom_stopwords = [unicode(i) for i in custom_list]
     stopwords.extend( custom_stopwords )
     new_text = [w for w in new_text if w not in stopwords]
+    new_text = [w for w in new_text if len(w) > 3]
 
     #print(new_text)
 
