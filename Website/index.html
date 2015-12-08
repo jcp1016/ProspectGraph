@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- Generated with Popoto.js Configurator 1.0 -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Popoto Search</title>
+    <link rel="stylesheet" href="css/popoto.min.css">
+</head>
+<body class="ppt-body">
+<header class="ppt-header">
+</header>
+<section class="ppt-section-main">
+    <div class="ppt-section-header">
+        <span class="ppt-header-span">Graph</span> search
+    </div>
+    <div class="ppt-container-graph">
+        <nav id="popoto-taxonomy" class="ppt-taxo-nav">
+            <!-- Label/taxonomy filter will be generated here -->
+        </nav>
+        <div id="popoto-graph" class="ppt-div-graph">
+            <!-- Graph will be generated here -->
+        </div>
+    </div>
+    <div id="popoto-query" class="ppt-container-query">
+        <!-- Query viewer will be generated here -->
+    </div>
+    <div id="popoto-cypher" class="ppt-container-cypher">
+        <!-- Cypher query viewer will be generated here -->
+    </div>
+    <div class="ppt-section-header">
+        <!-- The total results count is updated with a listener defined in script -->
+        RESULTS <span id="result-total-count" class="ppt-count"></span>
+    </div>
+    <div id="popoto-results" class="ppt-container-results">
+        <!-- Results will be generated here -->
+    </div>
+</section>
+<script src="js/jquery-2.1.0.min.js" charset="utf-8"></script>
+<script src="js/d3.v3.min.js" charset="utf-8"></script>
+<script src="js/popoto.min.js" charset="utf-8"></script>
+<script>
+// URL used to access Neo4j REST API to execute queries.
+popoto.rest.CYPHER_URL = "http://localhost:7474/db/data/transaction/commit";
+popoto.rest.AUTHORIZATION = "Basic bmVvNGo6Rmlyc2EyMjYs";
+popoto.provider.nodeProviders = {
+    "Person":{
+		"children": ["Role", "FollowerCount"],
+        returnAttributes:["followerCount", "personID", "Name", "Bio"],
+        constraintAttribute:"personID",
+        "getTextValue": function (node) {
+            var text;
+			
+            if (node.type === popoto.graph.node.NodeTypes.VALUE) {
+                text = "" + node.attributes["Name"];
+            } else {
+                if (node.value === undefined) {
+                    text = node.label;
+                } else {
+                    text = "" + node.value.attributes["Name"];
+                }
+            }
+            // Text is truncated to avoid node overflow
+            return text.substring(0, 12);
+        },
+		"getIsTextDisplayed": function (node) {
+                return true;
+            },
+
+    },
+    "Role":{
+        returnAttributes:["Name"],
+        constraintAttribute:"Name",
+    },
+    "Company":{
+        returnAttributes:["companyID", "dataQuality", "companyURL", "highConcept", "logoURL", "preMoneyValuation", "raisedAmount", "twitterURL", "linkedinURL", "raisingAmount", "companySize", "thumbURL", "crunchbaseURL", "Name", "primaryLocation"],
+        constraintAttribute:"Name",
+		getDisplayType: function (node) {
+                return popoto.provider.NodeDisplayTypes.IMAGE;
+            },
+		getImagePath: function (node) {
+			if (node.type === popoto.graph.node.NodeTypes.VALUE) {
+				return node.attributes.logoURL;
+			} else {
+				if (node.value !== undefined) {
+					return "image/missing.png";
+				} else {
+					if (node.type === popoto.graph.node.NodeTypes.ROOT) {
+						return "image/company.png";
+					} else {
+						if (node.count == 0) {
+							return "image/missing.png";
+						} else {
+							return "image/company.png";
+						}
+					}
+				}
+			}
+		},
+
+
+    },
+    "FollowerCount":{
+        returnAttributes:["Name", "RoleId"],
+        constraintAttribute:"Name",
+    },
+};
+popoto.result.onTotalResultCount(function (count) {
+    document.getElementById("result-total-count").innerHTML = "(" + count + ")";
+});
+popoto.logger.LEVEL = popoto.logger.LogLevels.INFO;
+popoto.start("Person");
+</script>
+</body>
+</html>
