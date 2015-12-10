@@ -1,14 +1,13 @@
-#-----------------------------------------------------------------
-# find_site_keywords.py
+#---------------------------------------------------------------------
+# get_likes.py
 #
-# Desc  :  Finds important keywords for a URL.  Takes two args: 
-#
-# 1) a fully formed URL, e.g. http://habitat.org
-# 2) an integer specifying the number of keywords to return, e.g. 20
+# Desc  :  Takes a file containing IDs and LinkedIn URLs.  Captures
+#          the interests section and writes IDs and interests to 
+#          a file.
 #
 # Author:  Janet Prumachuk
 # Date  :  Dec 2015
-#-----------------------------------------------------------------
+#---------------------------------------------------------------------
 import re, nltk, urllib2, sys, mechanize
 from html2text import html2text 
 from nltk.corpus import stopwords
@@ -22,7 +21,7 @@ def fetch_html(url_string):
         raw_html = br.open(url_string).read().decode('utf-8')
         return(raw_html) 
     except:
-        print "Sorry, this site could not be accessed.\n"
+        #print "Sorry, this site could not be accessed.\n"
         return(-1)
 
 def clean_html(html):
@@ -47,7 +46,7 @@ def clean_html(html):
     cleaned = re.sub(r"  ", " ", cleaned)
     return cleaned.strip()
 
-def compute_fdist(tokens):
+def lemmatize(tokens):
     # Applies text mining techniques from the NLTK package and 
     # calculates the frequency distribution of words, excluding stopwords
 
@@ -79,42 +78,57 @@ def compute_fdist(tokens):
                    'stay', 'height', 'video', 'email', 'money', 'news',
                    'opportunity', 'donate', 'press', 'faq', 'infographic',
                    'find', 'save', 'new', 'site', 'story', 'view', 'share',
-                   'become', 'center', 'holiday']
+                   'become', 'center', 'holiday', 'action', 'alleviation',
+                   'welfare', 'right']
 
     custom_stopwords = [unicode(i) for i in custom_list]
     stopwords.extend( custom_stopwords )
     new_text = [w for w in new_text if w not in stopwords]
     new_text = [w for w in new_text if len(w) > 3]
 
-    #print(new_text)
-
-    # Calculate frequency distribution
-    fdist = nltk.FreqDist(new_text)
-   
-    return(fdist)
-
+    return(new_text)
 
 def main():
-    url = str( sys.argv[1] )
-    N = int( sys.argv[2] )
-    
-    print( "Fetching " + url + "...")
- 
-    html_text  = fetch_html(url)
-    if html_text == -1:
-        return()
+    urlfile = open(sys.argv[1])
+    outfile = open(sys.argv[2], 'wb')
 
-    html_text  = clean_html(html_text)
-    plain_text = html2text(html_text)
-    tokens     = nltk.word_tokenize(plain_text)
-    keywords   = compute_fdist(tokens)
-    #print keywords
+    header = "personID|Interest\n"
+    outfile.write(header)
 
-    # Show the top n words
-    print( "Top " + str(N) + " words found for " + url + ":")
-    for word, freq in keywords.most_common(N):
-        print ('%s, %d' % (word, freq)).encode('utf-8')
+    for row in urlfile:
+        items = row.split("|")
+        personID = items[0]
+        url = items[2]
+        html_text = fetch_html(url) 
+        if html_text == -1:
+            continue
 
+        html_text  = clean_html(html_text)
+        plain_text = html2text(html_text)
+        #print plain_text
+        
+        start_text = "cares about:"
+        start_idx = plain_text.find(start_text) 
+        #print start_idx
+        if start_idx != -1:
+            start_idx += len(start_text)
+            end_idx    = plain_text.find(":", start_idx + 1, 
+                                              start_idx + 160)
+            if end_idx != -1:
+                end_idx = plain_text.find(":") - 1
+            else:
+                end_idx = start_idx + 160
+
+            #print start_idx, end_idx
+            all_interests = plain_text[start_idx:end_idx]
+            tokens   = nltk.word_tokenize(all_interests)
+            keywords = lemmatize(tokens)
+            for w in keywords:
+                record = personID + "|" + w + "\n"
+                outfile.write(record.encode('utf8', errors='ignore'))
+
+    urlfile.close()
+    outfile.close()
 
 if __name__ == '__main__':
     main()
