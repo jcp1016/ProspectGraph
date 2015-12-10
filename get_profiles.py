@@ -38,24 +38,23 @@ def fetch_profile_urls(people, companies):
             person_id    = fields[1]
             person_name  = fields[2]
             person_name  = person_name.replace(" ","+")
-            record = "linkedin+" + person_name + "+" + company_name + "\n"
+            search_str   = "linkedin+" + person_name + "+" + company_name + "\n"
+            record       = person_id +  "|" + fields[2]
 
             # find the most relevant LinkedIn profile
-            for url in search(record, lang='en', stop=1):
-                if "www.linkedin.com/pub/" in url:
-                    record = record + "|" + url + "\n"
-                    ss.write(record)
-                    break
-                elif "www.linkedin.com/in/" in url:
-                    record = record + "|" + url + "\n"
-                    ss.write(record)
-                    break
-                elif "linkedin.com" in url:
-                    record = record + "|" + url + "\n"
-                    ss.write(record)
-                    break
-                else
-                    continue
+            for url in search(search_str, lang='en', stop=1):
+                 if "www.linkedin.com/pub/" in url:
+                     record = record + "|" + url + "\n"
+                     ss.write(record)
+                     break
+                 elif "www.linkedin.com/in/" in url:
+                     record = record + "|" + url + "\n"
+                     ss.write(record)
+                     break
+                 elif "linkedin.com" in url:
+                     record = record + "|" + url + "\n"
+                     ss.write(record)
+                     break
                               
     ss.close()
 
