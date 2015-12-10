@@ -10,7 +10,7 @@ import sys, requests, re, time
 from google import search
 
 def create_dict(companies):
-    # create a dictionary for company name lookups
+    # create a dictionary for company name lookup
     cdict  = {}
     for c in companies:
         fields = c.split("|")
@@ -23,7 +23,7 @@ def create_dict(companies):
 
 def fetch_profile_urls(people, companies):
     fn = "links_" + time.strftime("%y%m%d%I%M%S") + ".txt"
-    ss = open(fn, 'w')
+    ss = open(fn, 'wb')
     fields = []
 
     # form the search string and execute a google search
@@ -39,7 +39,6 @@ def fetch_profile_urls(people, companies):
             person_name  = fields[2]
             person_name  = person_name.replace(" ","+")
             record = "linkedin+" + person_name + "+" + company_name + "\n"
-            record = fields[1] + "|" + fields[2] 
 
             # find the most relevant LinkedIn profile
             for url in search(record, lang='en', stop=1):
