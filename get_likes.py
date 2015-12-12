@@ -9,20 +9,32 @@
 # Date  :  Dec 2015
 #---------------------------------------------------------------------
 import re, nltk, urllib2, sys, mechanize
+import cookielib
 from html2text import html2text 
 from nltk.corpus import stopwords
+from nltk.corpus import wordnet as wn
 from nltk.stem import WordNetLemmatizer
 
 def fetch_html(url_string):
+    cj = cookielib.LWPCookieJar()
     br = mechanize.Browser()
+    br.set_cookiejar(cj)
     br.set_handle_robots(False)
-    br.addheaders = [('User-agent', 'Firefox')]
+    br.set_handle_referer(False)
+    br.set_handle_redirect(True)
+    br.set_handle_redirect(mechanize.HTTPRedirectHandler)
+    br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
+    br.addheaders = [('User-agent', 'Mozilla/5.0')]
     try:
-        raw_html = br.open(url_string).read().decode('utf-8')
-        return(raw_html) 
+        br.open(url_string)
     except:
-        #print "Sorry, this site could not be accessed.\n"
         return(-1)
+
+    url = br.geturl()
+    #print url
+    raw_html = br.open(url).read().decode('utf-8')
+    #print raw_html
+    return raw_html
 
 def clean_html(html):
     # Remove inline JavaScript/CSS:
@@ -57,43 +69,42 @@ def lemmatize(tokens):
     # De-punctuate and convert to lowercase
     new_text = [w.lower() for w in new_text if w.isalpha()]
    
-    # Keep only nouns and adverbs
-    #tags = nltk.pos_tag(new_text)
-    #new_text = [w for w,cd in tags if (cd[0] in ['N','R'])]
-
-    # Lemmatize the word (gives us better results than stemming)
-    lemma = WordNetLemmatizer()
-    new_text = map(lemma.lemmatize, new_text)
-    #print( new_text )
-
-    # Remove stopwords 
-    stopwords = nltk.corpus.stopwords.words('english')
-    custom_list = ['facebook', 'twitter', 'instagram', 'pinterest', 'youtube', 
-                   'google', 'blog', 'help', 'give', 'donate', 'way', 'join', 
-                   'make', 'month', 'week', 'day', 'year', 'time', 'name', 
-                   'team', 'fundraise', 'key', 'search', 'way', 'today', 
-                   'member', 'program', 'event', 'york', 'membership', 
-                   'visit', 'support', 'day', 'night', 'show', 'fall', 
-                   'winter', 'spring', 'summer', 'gift', 'benefit', 'state', 
-                   'stay', 'height', 'video', 'email', 'money', 'news',
-                   'opportunity', 'donate', 'press', 'faq', 'infographic',
-                   'find', 'save', 'new', 'site', 'story', 'view', 'share',
-                   'become', 'center', 'holiday', 'action', 'alleviation',
-                   'welfare', 'right']
-
-    custom_stopwords = [unicode(i) for i in custom_list]
-    stopwords.extend( custom_stopwords )
-    new_text = [w for w in new_text if w not in stopwords]
     new_text = [w for w in new_text if len(w) > 3]
+    return(new_text) 
 
-    return(new_text)
+def get_synonyms(word):
+    syns = []
+    for synset in wn.synsets(word):
+        for lemma in synset.lemmas():
+            syns.append(lemma.name())
+    return syns
+
+def avoid_truncated_words(i, some_text):
+    # Starting from index i, back up until we reach a blank space
+    try:
+        int(i)
+    except:
+        return i
+
+    i = int(i)
+    while 1:
+        if some_text[i] != " ":
+            i -= 1 
+        else:
+            break
+    return i
 
 def main():
     urlfile = open(sys.argv[1])
-    outfile = open(sys.argv[2], 'wb')
+    outfile = open(sys.argv[2], 'w')
 
     header = "personID|Interest\n"
     outfile.write(header)
+
+    valid_words = ['animal', 'arts', 'culture', 'civil', 'rights', 'social', 'action',
+                   'disaster', 'humanitarian', 'economic', 'empowerment',
+                   'education', 'environment', 'health', 'human', 'politics', 'poverty',
+                   'science', 'technology', 'social', 'services']
 
     for row in urlfile:
         items = row.split("|")
@@ -106,26 +117,33 @@ def main():
         html_text  = clean_html(html_text)
         plain_text = html2text(html_text)
         #print plain_text
-        
+
         start_text = "cares about:"
         start_idx = plain_text.find(start_text) 
-        #print start_idx
+        if start_idx == -1:
+            start_text = "matters to you."
+            start_idx = plain_text.find(start_text) 
+
         if start_idx != -1:
             start_idx += len(start_text)
             end_idx    = plain_text.find(":", start_idx + 1, 
-                                              start_idx + 160)
+                                              start_idx + 180)
             if end_idx != -1:
                 end_idx = plain_text.find(":") - 1
             else:
-                end_idx = start_idx + 160
+                end_idx = start_idx + 180
+
+            end_idx = avoid_truncated_words(end_idx, plain_text)
 
             #print start_idx, end_idx
             all_interests = plain_text[start_idx:end_idx]
             tokens   = nltk.word_tokenize(all_interests)
             keywords = lemmatize(tokens)
-            for w in keywords:
-                record = personID + "|" + w + "\n"
-                outfile.write(record.encode('utf8', errors='ignore'))
+            for k in keywords:
+                if k in valid_words:
+                    #for s in get_synonyms(k):
+                    record = personID + "|" + k + "\n"
+                    outfile.write(record.encode('utf8', errors='ignore'))
 
     urlfile.close()
     outfile.close()
