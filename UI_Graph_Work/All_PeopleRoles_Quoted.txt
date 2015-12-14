@@ -1,4 +1,4 @@
-"personID"|"Name"
+personID|Name
 "19263"|"founder"
 "1427847"|"past_investor"
 "1005846"|"past_investor"
