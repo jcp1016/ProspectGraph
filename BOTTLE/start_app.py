@@ -34,4 +34,4 @@ def submit(url=''):
         orgurl = "Error: please enter an organization name."
     return template("index.tpl", url=orgurl)
                           
-run(host='localhost', port=8080, debug=True)
+run(host='10.0.0.8', port=8080, debug=False)
