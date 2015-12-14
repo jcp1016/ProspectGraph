@@ -40,13 +40,41 @@
 <script src="js/popoto.min.js" charset="utf-8"></script>
 <script>
 // URL used to access Neo4j REST API to execute queries.
-popoto.rest.CYPHER_URL = "http://localhost:7474/db/data/transaction/commit";
-popoto.rest.AUTHORIZATION = "Basic bmVvNGo6Rmlyc2EyMjYs";
+//popoto.rest.CYPHER_URL = "http://localhost:7474/db/data/transaction/commit";
+//popoto.rest.AUTHORIZATION = "Basic bmVvNGo6Rmlyc2EyMjYs";
+popoto.rest.CYPHER_URL = "http://104.43.162.60:7474/db/data/transaction/commit";
+popoto.rest.AUTHORIZATION = "Basic bmVvNGo6bmVvNGo=";
 popoto.provider.nodeProviders = {
     "Person":{
-		"children": ["Role", "FollowerCount"],
+		"children": ["Role", "FollowerCount", "Interest", "FollowerCount"],
         returnAttributes:["followerCount", "personID", "Name", "Bio"],
         constraintAttribute:"personID",
+		"getDisplayType": function (node) {
+			if (node.type === popoto.graph.node.NodeTypes.ROOT) {
+			   return popoto.provider.NodeDisplayTypes.IMAGE;
+			   } else {
+					return popoto.provider.NodeDisplayTypes.TEXT;
+			   }           
+        },
+		getImagePath: function (node) {
+			if (node.type === popoto.graph.node.NodeTypes.VALUE) {
+				return node.attributes.logoURL;
+			} else {
+				if (node.value !== undefined) {
+					return "image/missing.png";
+				} else {
+					if (node.type === popoto.graph.node.NodeTypes.ROOT) {
+						return "image/employee.png";
+					} else {
+						if (node.count == 0) {
+							return "image/missing.png";
+						} else {
+							return "image/employee.png";
+						}
+					}
+				}
+			}
+		},
         "getTextValue": function (node) {
             var text;
 			
@@ -67,7 +95,55 @@ popoto.provider.nodeProviders = {
             },
 
     },
+	"Interest":{
+		parent: "Person",
+        returnAttributes:["interestType"],
+        constraintAttribute:"interestType",
+		"getDisplayType": function (node) {
+			if (node.type === popoto.graph.node.NodeTypes.ROOT || node.type === popoto.graph.node.NodeTypes.CHOOSE) {
+			   return popoto.provider.NodeDisplayTypes.IMAGE;
+			   } else {
+					return popoto.provider.NodeDisplayTypes.TEXT;
+			   }           
+        },
+		getImagePath: function (node) {
+			if (node.type === popoto.graph.node.NodeTypes.VALUE) {
+				return node.attributes.logoURL;
+			} else {
+				if (node.value !== undefined) {
+					return "image/missing.png";
+				} else {
+					if (node.type === popoto.graph.node.NodeTypes.ROOT) {
+						return "image/Thoughts.png";
+					} else {
+						if (node.count == 0) {
+							return "image/missing.png";
+						} else {
+							return "image/Thoughts.png";
+						}
+					}
+				}
+			}
+		},
+		"getTextValue": function (node) {
+            var text;
+			
+            if (node.type === popoto.graph.node.NodeTypes.VALUE) {
+                text = "" + node.attributes["interestType"];
+            } else {
+                if (node.value === undefined) {
+                    text = node.label;
+                } else {
+                    text = "" + node.value.attributes["interestType"];
+                }
+            }
+            // Text is truncated to avoid node overflow
+            return text.substring(0, 12);
+        },
+		
+    },
     "Role":{
+		parent: "Person",
         returnAttributes:["Name"],
         constraintAttribute:"Name",
     },
@@ -100,8 +176,50 @@ popoto.provider.nodeProviders = {
 
     },
     "FollowerCount":{
+		parent: "Person",
         returnAttributes:["Name", "RoleId"],
         constraintAttribute:"Name",
+		"getDisplayType": function (node) {
+			if (node.type === popoto.graph.node.NodeTypes.ROOT || node.type === popoto.graph.node.NodeTypes.CHOOSE) {
+			   return popoto.provider.NodeDisplayTypes.IMAGE;
+			   } else {
+					return popoto.provider.NodeDisplayTypes.TEXT;
+			   }           
+        },
+		getImagePath: function (node) {
+			if (node.type === popoto.graph.node.NodeTypes.VALUE) {
+				return node.attributes.logoURL;
+			} else {
+				if (node.value !== undefined) {
+					return "image/missing.png";
+				} else {
+					if (node.type === popoto.graph.node.NodeTypes.ROOT) {
+						return "image/followers.png";
+					} else {
+						if (node.count == 0) {
+							return "image/missing.png";
+						} else {
+							return "image/followers.png";
+						}
+					}
+				}
+			}
+		},
+		"getTextValue": function (node) {
+            var text;
+			
+            if (node.type === popoto.graph.node.NodeTypes.VALUE) {
+                text = "" + node.attributes["Name"];
+            } else {
+                if (node.value === undefined) {
+                    text = node.label;
+                } else {
+                    text = "" + node.value.attributes["Name"];
+                }
+            }
+            // Text is truncated to avoid node overflow
+            return text.substring(0, 12);
+        },
     },
 };
 popoto.result.onTotalResultCount(function (count) {

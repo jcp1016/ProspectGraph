@@ -12,10 +12,10 @@
 export INFILE="file:/Users/janetprumachuk/dev/Python/Columbia/bda-dev/All_PeopleRoles.txt"
 
 LOAD CSV WITH HEADERS 
-FROM {INFILE} AS row 
+FROM 'https://raw.githubusercontent.com/jcp1016/bda-team-project/master/UI_Graph_Work/All_PeopleRoles.txt' AS row 
 FIELDTERMINATOR "|"
 MATCH (p:Person {personID: row.personID}), (r:Role {Name: row.Name})
-MERGE (p)-[:EMPLOYEE_TYPE {roleType: row.Name}]->(r);
+MERGE (p)-[:EMPLOYEE_TYPE]->(r);
 
 MATCH (p:Person)-[r:WORKS_AT]->(c:Company)
 RETURN p.Name, r, c.Name LIMIT 5;
