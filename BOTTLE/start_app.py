@@ -33,7 +33,7 @@ def submit(url=''):
     else:
         orgurl = "Error: please enter an organization name."
     return template("index.tpl", url=orgurl)
-
+                          
 if os.system('whoami') == 'Columbia':
     run(host='10.0.0.8', port=8080, debug=False)
 else:
