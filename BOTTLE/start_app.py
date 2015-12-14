@@ -1,5 +1,6 @@
 import json, os
-from bottle import route, run, request, response, static_file, template, view
+from bottle import get, post, route, run, debug, request, response, static_file, template
+import json
 #from py2neo import GraphDatabaseService, CypherQuery
 
 #run(reloader = True)
@@ -21,25 +22,16 @@ def img_static(filename):
 
 @route('/')
 def index():
-    return static_file("index.html", root=".")
-    #return '''
-    #    <form action="/get_url", method="post">
-    #        orgname: <input name="orgname" type="text" />
-    #    </form>
-    #'''
+    return template("index.tpl", url='')
 
-@route('/get_url', method='POST')
-def get_url():
+@route('/', method='POST')
+def submit(url=''):
     orgname = request.forms.get('orgname').strip().lower()
     if orgname:
-        orgurl = "<p>http://www." + orgname + ".org</p>"
-        return orgurl
+        orgurl = "http://www." + orgname + ".org"
+        #raw_items = os.system("python site_keywords.py " + orgurl + " 20")
     else:
-        return "<p>Error: please enter an organizatin name.</p>" 
-                         
+        orgurl = "Error: please enter an organization name."
+    return template("index.tpl", url=orgurl)
                           
-@route("/search")
-def do_search():
-    return
-
-run(host='localhost', port=8080, debug=False)
+run(host='localhost', port=8080, debug=True)
