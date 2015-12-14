@@ -70,6 +70,7 @@
     </div><!-- jumbotron -->
 
     <p>{{url}}</p> 
+    %if url != '' and url[0:5] != 'Error':
 
     <div class="container">
       <!-- Example row of columns -->
@@ -91,6 +92,7 @@
         </div>
       </div>
 
+    %end
       <hr>
 
       <footer>
