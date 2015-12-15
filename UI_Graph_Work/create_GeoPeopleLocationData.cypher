@@ -13,9 +13,9 @@
 export INFILE="file:/Users/janetprumachuk/dev/Python/Columbia/bda-dev/all_AproxPeopleGeo"
 
 LOAD CSV WITH HEADERS 
-FROM "https://raw.githubusercontent.com/jcp1016/bda-team-project/master/UI_Graph_Work/test_GEOLOCATION.txt" AS row
+FROM "https://raw.githubusercontent.com/jcp1016/bda-team-project/master/UI_Graph_Work/all_AproxPeopleGEO.txt" AS row
 FIELDTERMINATOR "|"
-MATCH (p:Company {Name: row.Name})
+MATCH (p:Person {Name: row.personName})
 SET p.LAT = toFloat(row.LAT)
 SET p.LON = toFloat(row.LON)
 

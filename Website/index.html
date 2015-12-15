@@ -78,7 +78,7 @@ LastNodeProperty = "Something"
 popoto.provider.nodeProviders = {
     "Person":{
 		"children": ["Role", "FollowerCount", "Interest", "Company", "School"],
-        returnAttributes:["followerCount", "personID", "Name", "Bio"],
+        returnAttributes:["followerCount", "personID", "Name", "Bio", "LAT", "LON"],
         constraintAttribute:"personID",
 		"getDisplayType": function (node) {
 			if (node.type === popoto.graph.node.NodeTypes.ROOT) {
@@ -326,19 +326,36 @@ popoto.provider.nodeProviders = {
 /**
  * Add a listener on result received to update map.
  */
- var ASCYNC_DONE = false;
- var xPin = -44;
- var yPin = 70;
+
  
     popoto.result.onResultReceived(
 		function (resultObjects) {
 			//acccessKey = "pk.eyJ1Ijoic2d1bGVmZiIsImEiOiJjaWk2dXB4OGIwMXZmdG9rZnFndzdheWR1In0.QSvi7ri0fi9Mb4t4s2YJoQ"
 
-			geocoder.query('Denver',DropPinOnMap)
+			//geocoder.query('Denver',DropPinOnMap)
 			
-			setTimeout(function(){ window.alert("Hello"); }, 3000);
+			// display all values
+			var arrayLength = resultObjects.length;
+			for (var i = 0; i < arrayLength; i++) {
+				if (!isNaN(parseFloat(resultObjects[i].attributes.LAT)) && !isNaN(parseFloat(resultObjects[i].attributes.LON))){
+					 apin = L.marker([
+							  parseFloat(resultObjects[i].attributes.LAT),
+							  parseFloat(resultObjects[i].attributes.LON)
+							], {
+						icon: L.mapbox.marker.icon({
+							'marker-size': 'large',
+							'marker-symbol': 'x',
+							'marker-color': '#fa0'
+						})
+					}).addTo(map);
+		
+				}
+				//Do something
+			}
+			// L.marker is a low-level marker constructor in Leaflet.
 			
-			L.mapbox.featureLayer({
+			
+			/*L.mapbox.featureLayer({
 				// this feature is in the GeoJSON format: see geojson.org
 				// for the full specification
 				type: 'Feature',
@@ -347,8 +364,8 @@ popoto.provider.nodeProviders = {
 					// coordinates here are in longitude, latitude order because
 					// x, y is the standard for GeoJSON and many formats
 					coordinates: [
-					  xPin,
-					  yPin
+					  parseFloat(resultObjects[0].attributes.LAT),
+					  parseFloat(resultObjects[0].attributes.LON)
 					]
 				},
 				properties: {
@@ -360,7 +377,7 @@ popoto.provider.nodeProviders = {
 					'marker-color': '#BE9A6B',
 					'marker-symbol': 'cafe'
 				}
-			}).addTo(map);
+			}).addTo(map);*/
 
 			//geocoder.query('NYC', DropPinOnMap);
 				
