@@ -44,9 +44,10 @@
 //popoto.rest.AUTHORIZATION = "Basic bmVvNGo6Rmlyc2EyMjYs";
 popoto.rest.CYPHER_URL = "http://104.43.162.60:7474/db/data/transaction/commit";
 popoto.rest.AUTHORIZATION = "Basic bmVvNGo6bmVvNGo=";
+LastNodeProperty = "Something"
 popoto.provider.nodeProviders = {
     "Person":{
-		"children": ["Role", "FollowerCount", "Interest", "FollowerCount"],
+		"children": ["Role", "FollowerCount", "Interest", "Company"],
         returnAttributes:["followerCount", "personID", "Name", "Bio"],
         constraintAttribute:"personID",
 		"getDisplayType": function (node) {
@@ -103,15 +104,20 @@ popoto.provider.nodeProviders = {
 			if (node.type === popoto.graph.node.NodeTypes.ROOT || node.type === popoto.graph.node.NodeTypes.CHOOSE) {
 			   return popoto.provider.NodeDisplayTypes.IMAGE;
 			   } else {
-					return popoto.provider.NodeDisplayTypes.TEXT;
+					return popoto.provider.NodeDisplayTypes.IMAGE;
 			   }           
         },
 		getImagePath: function (node) {
 			if (node.type === popoto.graph.node.NodeTypes.VALUE) {
-				return node.attributes.logoURL;
+				if (node.attributes.logoURL === undefined){
+					return "image/Interest/" + node.attributes["interestType"] + ".png";
+				} else {
+					return node.attributes.logoURL;
+				}
+			
 			} else {
 				if (node.value !== undefined) {
-					return "image/missing.png";
+					return "image/Interest/" +  node.value.attributes.interestType + ".png"; //"image/missing.png";
 				} else {
 					if (node.type === popoto.graph.node.NodeTypes.ROOT) {
 						return "image/Thoughts.png";
@@ -148,6 +154,7 @@ popoto.provider.nodeProviders = {
         constraintAttribute:"Name",
     },
     "Company":{
+		parent: "Person",
         returnAttributes:["companyID", "dataQuality", "companyURL", "highConcept", "logoURL", "preMoneyValuation", "raisedAmount", "twitterURL", "linkedinURL", "raisingAmount", "companySize", "thumbURL", "crunchbaseURL", "Name", "primaryLocation"],
         constraintAttribute:"Name",
 		getDisplayType: function (node) {
@@ -158,7 +165,7 @@ popoto.provider.nodeProviders = {
 				return node.attributes.logoURL;
 			} else {
 				if (node.value !== undefined) {
-					return "image/missing.png";
+					return  node.value.attributes.logoURL[0];
 				} else {
 					if (node.type === popoto.graph.node.NodeTypes.ROOT) {
 						return "image/company.png";
@@ -181,7 +188,12 @@ popoto.provider.nodeProviders = {
         constraintAttribute:"Name",
 		"getDisplayType": function (node) {
 			if (node.type === popoto.graph.node.NodeTypes.ROOT || node.type === popoto.graph.node.NodeTypes.CHOOSE) {
-			   return popoto.provider.NodeDisplayTypes.IMAGE;
+				if (node.value !== undefined){
+					return popoto.provider.NodeDisplayTypes.TEXT;
+				}  else {
+					return popoto.provider.NodeDisplayTypes.IMAGE;
+				}
+			   
 			   } else {
 					return popoto.provider.NodeDisplayTypes.TEXT;
 			   }           
@@ -222,6 +234,18 @@ popoto.provider.nodeProviders = {
         },
     },
 };
+
+/**
+     * Add a listener on result received to update map.
+     */
+    popoto.result.onResultReceived(
+		function (resultObjects) {
+			window.alert("sometext");
+	
+		}
+    );
+
+
 popoto.result.onTotalResultCount(function (count) {
     document.getElementById("result-total-count").innerHTML = "(" + count + ")";
 });
