@@ -2,14 +2,14 @@ Name|LAT|LON
 "mytweetmark"|37.387474|-122.057543
 "Love Lab®"|34.052234|-118.243685
 "Social Rewards"|34.052234|-118.243685
-"Hey Gorgeous!|zzz|40.712784|-74.005941
+"Hey Gorgeous!"|40.712784|-74.005941
 "Symfonie P2P"|51.507351|-0.127758
 "ComboTrip"|35.085334|-106.605553
 "MarketMuse"|42.360083|-71.05888
 "Power-Tags"|32.0853|34.781768
 "Maker"|37.77493|-122.419416
 "HomeKeepr"|40.058324|-74.405661
-"LVX Elektronik A.Ş.|zzz|37.874643|32.493155
+"LVX Elektronik A.Ş."|37.874643|32.493155
 "Trio Custom Clothiers"|33.748995|-84.387982
 "Guiddoo World"|25.204849|55.270783
 "POLCO"|30.674364|-96.369963
@@ -20,7 +20,7 @@ Name|LAT|LON
 "Patient-Help"|12.971599|77.594563
 "TENDERWEEK.com"|41.299496|69.240073
 "Sensentia "|37.77493|-122.419416
-"GeoMoby|zzz|-31.953513|115.857047
+"GeoMoby"|-31.953513|115.857047
 "Medigram"|37.385218|-122.11413
 "Search in MENA"|37.77493|-122.419416
 "ThynkWare Innovation"|37.386052|-122.083851
@@ -40,7 +40,7 @@ Name|LAT|LON
 "Orkiv "|42.360083|-71.05888
 "Stellar Research"|33.448377|-112.074037
 "Color Talking"|23.684994|90.356331
-"Aqua Design Innovations (ADI Ventures)|zzz|32.715738|-117.161084
+"Aqua Design Innovations (ADI Ventures)"|32.715738|-117.161084
 "Vamos - The Event Guide"|52.520007|13.404954
 "Join2Link"|36.204824|138.252924
 "BookedWith"|33.567684|-117.725608
@@ -77,7 +77,7 @@ Name|LAT|LON
 "FarmUp"|23.634501|-102.552784
 "COMPRANDOFACIL"|6.253041|-75.564574
 "StoreGenie "|44.977753|-93.265011
-"ivory sands safari & beach lodges|zzz|-25.475298|30.969416
+"ivory sands safari & beach lodges"|-25.475298|30.969416
 "VastyData"|53.408371|-2.991573
 "Dockerize.It"|40.416775|-3.70379
 "Picotek"|42.373616|-71.109733
@@ -100,7 +100,7 @@ Name|LAT|LON
 "HomeQ - UK Property Questions & Answers"|51.507351|-0.127758
 "Premium Financing R Us"|34.142508|-118.255075
 "Premium Financing R Us"|34.142508|-118.255075
-"BEARING DATA|zzz|-23.55052|-46.633309
+"BEARING DATA"|-23.55052|-46.633309
 "Sideric"|60.173324|24.941025
 "Livento Investments"|40.712784|-74.005941
 "Fortune 500 Marketing Solutions"|26.715342|-80.053375
@@ -112,7 +112,7 @@ Name|LAT|LON
 "Femonoe"|37.77493|-122.419416
 "GRINTLY"|55.755826|37.6173
 "Eventshot"|37.566535|126.977969
-"Australian MOOC Academy|zzz|-33.867487|151.20699
+"Australian MOOC Academy"|-33.867487|151.20699
 "Gift Of A Helping Hand Charitable TR"|42.331427|-83.045754
 "Poolhouse"|43.653226|-79.383184
 "Nutrit"|40.417287|-82.907123
@@ -161,11 +161,11 @@ Name|LAT|LON
 "Betify"|51.507351|-0.127758
 "Racedingo"|44.763057|-85.620632
 "English Connection"|37.566535|126.977969
-"MoonRabbit Design Studios|zzz|-30.559482|22.937506
-"Cosmic Games|zzz|-31.953513|115.857047
+"MoonRabbit Design Studios"|-30.559482|22.937506
+"Cosmic Games"|-31.953513|115.857047
 "prana.co"|37.77493|-122.419416
 "BollywoodTickets.com"|40.712784|-74.005941
-"Autotall|zzz|-31.420083|-64.188776
+"Autotall"|-31.420083|-64.188776
 "DATANEXT"|47.376887|8.541694
 "NAMU"|52.229676|21.012229
 "Education.bg"|42.733883|25.48583
@@ -173,7 +173,7 @@ Name|LAT|LON
 "1st Wellness & Performance"|33.748995|-84.387982
 "ElfBite"|60.128161|18.643501
 "TheCopperCop"|32.715738|-117.161084
-"Fans Cloth ID|zzz|-7.575489|110.824327
+"Fans Cloth ID"|-7.575489|110.824327
 "eMERAHAAT RETAIL PRIVATE"|22.572646|88.363895
 "BEE"|37.77493|-122.419416
 "Social4Social"|45.465422|9.185924
@@ -215,7 +215,7 @@ Name|LAT|LON
 "TV Tog "|25.204849|55.270783
 "Refuel Group Fitness"|43.04673|-77.095252
 "Winner Takes All"|52.370216|4.895168
-"Project Airplane|zzz|-14.235004|-51.92528
+"Project Airplane"|-14.235004|-51.92528
 "Digital Marketing Courses"|13.08268|80.270718
 "Agora"|48.379433|31.16558
 "Voyz.es"|37.45296|-122.181725
@@ -230,7 +230,7 @@ Name|LAT|LON
 "3P eVentures"|25.354826|51.183884
 "Unique Lab Services"|33.448377|-112.074037
 "Figure"|47.60621|-122.332071
-"Linkia Soluções de E-commerce|zzz|-19.916681|-43.934493
+"Linkia Soluções de E-commerce"|-19.916681|-43.934493
 "White-Out Reviews"|41.081445|-81.519005
 "Epic Studios"|50.159459|7.359079
 "Viridi Technology "|39.768403|-86.158068
@@ -254,7 +254,7 @@ Name|LAT|LON
 "Nebel.TV"|37.386052|-122.083851
 "Sentinel web technologies"|51.507351|-0.127758
 "gde.ru - online classifieds"|61.52401|105.318756
-"Integralsoft|zzz|-17.413977|-66.165322
+"Integralsoft"|-17.413977|-66.165322
 "Flash Messenger"|38.907192|-77.036871
 "MyBeeble"|33.42551|-111.940005
 "CrowdFund Beat Media Group"|37.386052|-122.083851
@@ -263,7 +263,7 @@ Name|LAT|LON
 "Acegamingsoftware "|48.135125|11.581981
 "www.dbateria.com"|40.416775|-3.70379
 "achatlaser.com"|48.856614|2.352222
-"Bitcoin Brothers S.R.L|zzz|-38.416097|-63.616672
+"Bitcoin Brothers S.R.L"|-38.416097|-63.616672
 "SanFranSEO"|37.77493|-122.419416
 "Perfect Pizza Company"|45.357343|-122.606758
 "Perform Pro"|53.349805|-6.26031
@@ -303,18 +303,18 @@ Name|LAT|LON
 "Rachel'Z  Cakes & Coffee"|38.029306|-78.476678
 "returnhelp"|31.554606|74.357158
 "Michael De Paulo"|40.712784|-74.005941
-"Longman Suntech Energy Pvt.|zzz|19.075984|72.877656
+"Longman Suntech Energy Pvt."|19.075984|72.877656
 "PurpleCloud Technologies"|39.952584|-75.165222
-"Quick Hang door installing systems|zzz|-33.867487|151.20699
+"Quick Hang door installing systems"|-33.867487|151.20699
 "maxMustermann"|40.712784|-74.005941
 "Exchange Recovery Tool"|3.321334|-76.235361
 "Ensemble Online"|36.746842|-119.772587
 "SLC Valve Repair Services L.L.C"|41.355654|-72.099521
-"Goldman Global & Greene (3G)|zzz|40.712784|-74.005941
+"Goldman Global & Greene (3G)"|40.712784|-74.005941
 "Pvrenet"|43.61871|-116.214607
 "Nauchi me"|42.697708|23.321868
 "Yardarm Technologies "|36.975228|-121.953293
-"CLT+|zzz|35.227087|-80.843127
+"CLT+"|35.227087|-80.843127
 "STARS COMMUNITY DEVELOPMENT"|36.169941|-115.13983
 "Truth Be Told Productions"|39.952584|-75.165222
 "MashDrop"|34.146647|-118.807373
@@ -327,8 +327,8 @@ Name|LAT|LON
 "EasyEye"|32.776664|-96.796988
 "Trash Riot"|36.169941|-115.13983
 "Planet Hydra"|34.052234|-118.243685
-"Candyland|zzz|-36.84846|174.763332
-"Great Insurance (GI)|zzz|22.396428|114.109497
+"Candyland"|-36.84846|174.763332
+"Great Insurance (GI)"|22.396428|114.109497
 "SwiftLaunch"|45.638728|-122.661486
 "Promoto"|41.008238|28.978359
 "CgC Daily"|34.052234|-118.243685
@@ -352,7 +352,7 @@ Name|LAT|LON
 "We Do events & wedding Planning "|30.04442|31.235712
 "FaceReview"|39.920541|-105.08665
 "Munarsh I.T Service"|24.861462|67.009939
-"WINE PROJECT S.A.S.|zzz|48.863812|2.448451
+"WINE PROJECT S.A.S."|48.863812|2.448451
 "YUKANG International"|40.712784|-74.005941
 "YouJoin"|51.507351|-0.127758
 "IFA Prowear"|39.755543|-105.2211
@@ -360,7 +360,7 @@ Name|LAT|LON
 "International Power & Energy"|41.671765|-72.94927
 "Bizigo OTA"|14.058324|108.277199
 "Dashboards to Desktops"|25.908706|-80.308662
-"Foogi|zzz|-33.867487|151.20699
+"Foogi"|-33.867487|151.20699
 "BuckGet.com"|40.440625|-79.995886
 "BuckGet.com"|40.440625|-79.995886
 "hulabuk"|51.507351|-0.127758
@@ -375,10 +375,10 @@ Name|LAT|LON
 "Stallion Rockshore"|58.377625|26.729006
 "Barterd.in"|12.971599|77.594563
 "FINEX MEDIA SERVICES"|28.613939|77.209021
-"Trioed|zzz|-33.867487|151.20699
+"Trioed"|-33.867487|151.20699
 "LinkedAge"|46.056947|14.505751
 "Imm'@gile"|48.856614|2.352222
-"Thank You.|zzz|46.186561|21.312268
+"Thank You."|46.186561|21.312268
 "Corridor Transit"|35.46756|-97.516428
 "CheckDroid"|33.748995|-84.387982
 "BEQ INVESTMENT"|4.710989|-74.072092
@@ -397,7 +397,7 @@ Name|LAT|LON
 "Bulldog Digital Media"|34.052234|-118.243685
 "MIR Apparel"|40.712784|-74.005941
 "WexPortal"|49.19506|16.606837
-"The Haleem Campus (schools )|zzz|31.554606|74.357158
+"The Haleem Campus (schools )"|31.554606|74.357158
 "Kampung Quest"|3.139003|101.686855
 "Galef"|51.507351|-0.127758
 "Bella Lounge"|29.760427|-95.369803
@@ -410,10 +410,10 @@ Name|LAT|LON
 "FromMap"|37.77493|-122.419416
 "inkSIG digital"|44.977753|-93.265011
 "The School Day"|32.715738|-117.161084
-"Atlas Conserve|zzz|-1.292066|36.821946
+"Atlas Conserve"|-1.292066|36.821946
 "osmartex and company Nig"|6.524379|3.379206
 "DevJournal"|45.039267|38.987221
-"Black Bird|zzz|-6.283522|106.711293
+"Black Bird"|-6.283522|106.711293
 "Krave Greatness"|41.252363|-95.997988
 "Urban Style Academy"|39.961176|-82.998794
 "Amogam eBusiness"|13.08268|80.270718
@@ -460,7 +460,7 @@ Name|LAT|LON
 "Clubs in NYC"|40.712784|-74.005941
 "Inksav.com"|4.710989|-74.072092
 "Top World Traders"|44.426767|26.102538
-"Herocondoms|zzz|-33.283577|149.10127
+"Herocondoms"|-33.283577|149.10127
 "coJuvo"|47.60621|-122.332071
 "Zstat"|42.373616|-71.109733
 "Aurora Global"|20.659699|-103.349609
@@ -470,7 +470,7 @@ Name|LAT|LON
 "Quantum Therapeutics "|26.122439|-80.137317
 "Better: The Game"|41.008238|28.978359
 "TheStartupJournal"|20.296059|85.82454
-"Lifestyle Design Co.|zzz|35.689488|139.691706
+"Lifestyle Design Co."|35.689488|139.691706
 "Xcelthera"|32.715738|-117.161084
 "OpipariDesignGroup"|42.48948|-83.144649
 "Splitzee"|42.360083|-71.05888
@@ -502,7 +502,7 @@ Name|LAT|LON
 "Exchange EDB Converter"|3.321334|-76.235361
 "Itzpapalotl- An Independant Short"|37.77493|-122.419416
 "Rental Geek"|38.982228|-94.670792
-"Riselo|zzz|-6.917464|107.619123
+"Riselo"|-6.917464|107.619123
 "Web Development Las Vegas"|37.09024|-95.712891
 "2Event.com"|48.379433|31.16558
 "4Virtuals"|32.776664|-96.796988
@@ -510,7 +510,7 @@ Name|LAT|LON
 "Sellton"|48.379433|31.16558
 "Jan's Custom Rides"|43.544596|-96.731103
 "SharesPost 100 Fund"|37.387474|-122.057543
-"Mogribu |zzz|-4.441931|15.266293
+"Mogribu "|-4.441931|15.266293
 "JeyJeCa"|4.710989|-74.072092
 "Food To Grow On"|39.952584|-75.165222
 "Store With Me"|36.169941|-115.13983
@@ -530,13 +530,13 @@ Name|LAT|LON
 "WP Elevate"|33.448377|-112.074037
 "Float Away"|35.77959|-78.638179
 "TruClinic"|40.760779|-111.891047
-"Pulse Radio SA |zzz|-33.924868|18.424055
+"Pulse Radio SA "|-33.924868|18.424055
 "Rent A Gent"|40.712784|-74.005941
 "Oohly"|39.099727|-94.578567
 "Red Leaf Capital"|41.878114|-87.629798
 "Wheely"|40.712784|-74.005941
 "Manalto"|34.052234|-118.243685
-"Política Esporte Clube|zzz|-19.916681|-43.934493
+"Política Esporte Clube"|-19.916681|-43.934493
 "eVOLV Fitness"|35.085334|-106.605553
 "RocketUpwards"|51.507351|-0.127758
 "Gutenbergz"|46.482526|30.72331
@@ -556,7 +556,7 @@ Name|LAT|LON
 "ClinZen"|29.424122|-98.493628
 "module laser rouge 20mw"|33.660939|-95.555513
 "Brain N Brand"|19.075984|72.877656
-"Dandora Dumpsite Rehabilitation Group |zzz|-1.292066|36.821946
+"Dandora Dumpsite Rehabilitation Group "|-1.292066|36.821946
 "Bliss Devices"|37.77493|-122.419416
 "Futbolitos"|19.432608|-99.133208
 "Collar"|53.349805|-6.26031
@@ -572,21 +572,21 @@ Name|LAT|LON
 "F3D Games"|51.507351|-0.127758
 "Rezonver"|55.755826|37.6173
 "Whispto"|51.507351|-0.127758
-"Umby Racks|zzz|-33.867487|151.20699
+"Umby Racks"|-33.867487|151.20699
 "FamousIdea"|27.664827|-81.515754
 "Peakfactor Solution"|20.593684|78.96288
-"Investfoot|zzz|-35.675147|-71.542969
-"Trekking Hero|zzz|-35.675147|-71.542969
+"Investfoot"|-35.675147|-71.542969
+"Trekking Hero"|-35.675147|-71.542969
 "Klinq"|36.169941|-115.13983
 "IoT.do - Internet of Things"|25.76168|-80.19179
 "NWG studios"|48.379433|31.16558
-"mine|zzz|-19.916681|-43.934493
-"BidMonster Group|zzz|-30.559482|22.937506
+"mine"|-19.916681|-43.934493
+"BidMonster Group"|-30.559482|22.937506
 "Monkey Paintball"|40.622048|-74.24459
 "Home Planning"|40.179186|44.499103
 "9amigo.com"|12.971599|77.594563
 "Social HQ"|39.768403|-86.158068
-"Tunnel Lab|zzz|-0.023559|37.906193
+"Tunnel Lab"|-0.023559|37.906193
 "Snap"|7.377536|3.94704
 "Crowdfunding Compliance Center"|40.678178|-73.944158
 "RueCentrale"|48.856614|2.352222
@@ -604,7 +604,7 @@ Name|LAT|LON
 "MapDentist.com"|33.717471|-117.831143
 "Smoothbook"|51.507351|-0.127758
 "ArisingLand.com"|22.396428|114.109497
-"Imagi Visualize|zzz|-6.208763|106.845599
+"Imagi Visualize"|-6.208763|106.845599
 "TaskBeat"|53.428544|14.552812
 "Vibrasol"|25.204849|55.270783
 "vetidni.ru"|55.755826|37.6173
@@ -620,7 +620,7 @@ Name|LAT|LON
 "Dragon Fruit Communications"|43.653226|-79.383184
 "The Dream App"|25.204849|55.270783
 "Foster.ly"|37.77493|-122.419416
-"ANAJ food truck manufacturers.|zzz|28.459497|77.026638
+"ANAJ food truck manufacturers."|28.459497|77.026638
 "Comestiibles"|44.837789|-0.57918
 "Healium"|37.77493|-122.419416
 "ENTvantage Dx"|30.267153|-97.743061
@@ -662,36 +662,36 @@ Name|LAT|LON
 "iCoach"|38.907192|-77.036871
 "The Nifty Penguin"|30.421309|-87.216915
 "Golf in Zone"|41.057319|-74.140977
-"Qualiall|zzz|-27.815463|-50.326356
+"Qualiall"|-27.815463|-50.326356
 "mozaico.mx"|25.686614|-100.316113
 "AbluWater"|38.907192|-77.036871
 "Bitwealth Systems"|9.081999|8.675277
 "LifeSwift"|45.188529|5.724524
 "Socioboard Technologies"|12.971599|77.594563
-"Bix Kenya|zzz|-1.292066|36.821946
-"Bix Kenya|zzz|-1.292066|36.821946
+"Bix Kenya"|-1.292066|36.821946
+"Bix Kenya"|-1.292066|36.821946
 "Soundflake"|37.441883|-122.143019
 "ImMissingYou"|34.052234|-118.243685
 "Setaway Tours"|21.17024|72.831061
 "Bottlerocket "|47.60621|-122.332071
 "Kufuma"|38.544907|-121.740517
-"Here Is How (ACQUI-HIRED by @policymic)|zzz|40.712784|-74.005941
+"Here Is How (ACQUI-HIRED by @policymic)"|40.712784|-74.005941
 "Kotodaam.com"|23.810332|90.412518
 "Bait Lotion"|34.052234|-118.243685
 "Sr. Pago"|19.432608|-99.133208
 "Intellectlife.com"|55.864237|-4.251806
 "CloudWorking"|33.748995|-84.387982
 "Metagoo"|37.36883|-122.03635
-"CrowdTwitch|zzz|-26.204103|28.047305
+"CrowdTwitch"|-26.204103|28.047305
 "Briceño's Academy Studios"|34.052234|-118.243685
 "onbranding"|41.385064|2.173403
 "Fatface Dining"|39.904211|116.407395
 "Promogram"|32.776664|-96.796988
 "Imperial Developments"|29.760427|-95.369803
 "Contract It"|31.179941|-83.788839
-"Prana Cafe (Jai LLC)|zzz|32.715738|-117.161084
+"Prana Cafe (Jai LLC)"|32.715738|-117.161084
 "ChiswickBJJ"|51.507351|-0.127758
-"FrontCrew - Women who make Africa|zzz|-33.924868|18.424055
+"FrontCrew - Women who make Africa"|-33.924868|18.424055
 "iCalamity"|7.190708|125.455341
 "BetsUP"|42.878213|-8.544844
 "Waffirly"|30.585164|36.238414
@@ -706,7 +706,7 @@ Name|LAT|LON
 "Luna Aerospace"|42.866632|-106.313081
 "Prestinver"|19.432608|-99.133208
 "Good Sign Productions"|42.331427|-83.045754
-"Pop Currency Foundation (Popular Coin)|zzz|39.099727|-94.578567
+"Pop Currency Foundation (Popular Coin)"|39.099727|-94.578567
 "Chrisari Entertainment"|9.081999|8.675277
 "Mysk"|34.052234|-118.243685
 "Inside Out Web Solutions"|35.77959|-78.638179
@@ -716,9 +716,9 @@ Name|LAT|LON
 "TeaMeet"|10.480594|-66.903606
 "New Horizons Ventures"|39.290385|-76.612189
 "Cuves Thermales"|52.939916|-73.549136
-"MeuTutor|zzz|-9.649849|-35.708949
+"MeuTutor"|-9.649849|-35.708949
 "Health Sidekick"|33.542248|-117.78311
-"Fibras Andinas Chile: Royal Llama|zzz|-35.675147|-71.542969
+"Fibras Andinas Chile: Royal Llama"|-35.675147|-71.542969
 "Recruitment Services"|18.52043|73.856744
 "biindoo ltd 邊度"|22.396428|114.109497
 "TribeSay"|38.918722|-77.231092
@@ -756,7 +756,7 @@ Name|LAT|LON
 "REO Capital"|42.331427|-83.045754
 "Unity Travel"|36.169941|-115.13983
 "Symfonie Angel Ventures, LP"|50.075538|14.4378
-"HIRE a HUMAN|zzz|-33.867487|151.20699
+"HIRE a HUMAN"|-33.867487|151.20699
 "R&J Entertainment"|37.780885|-90.421789
 "Derisq"|39.952584|-75.165222
 "Max Rights"|41.878114|-87.629798
@@ -771,7 +771,7 @@ Name|LAT|LON
 "Football Action Sport Association"|34.100843|-117.767835
 "OJUAGBO"|6.524379|3.379206
 "College Inside View"|40.712784|-74.005941
-"Mellowcabs|zzz|-33.924868|18.424055
+"Mellowcabs"|-33.924868|18.424055
 " BlueRose"|51.048615|-114.070846
 "Techzonic"|37.09024|-95.712891
 "NYLA By Scott "|40.712784|-74.005941
@@ -784,15 +784,15 @@ Name|LAT|LON
 "Oceen"|53.551085|9.993682
 "Milo Fitness"|40.58526|-105.084423
 "Hashtack"|40.712784|-74.005941
-":Dudexp|zzz|-27.595378|-48.54805
+":Dudexp"|-27.595378|-48.54805
 "CALLEBELLA"|41.008238|28.978359
-"CrowdBus|zzz|-8.057838|-34.882897
+"CrowdBus"|-8.057838|-34.882897
 "Cedar Grove Brewery & Tap"|44.804132|-93.166886
 "Traffix"|25.76168|-80.19179
 "Awestruck Foods Private"|28.459497|77.026638
 "Finciero"|42.878213|-8.544844
 "Quipbook.com"|40.712784|-74.005941
-"Arte e Artefato|zzz|-19.916681|-43.934493
+"Arte e Artefato"|-19.916681|-43.934493
 "Huntable"|51.507351|-0.127758
 "pixd"|9.931233|76.267304
 "Flatsoft Displays Company Limited "|1.352083|103.819836
@@ -817,7 +817,7 @@ Name|LAT|LON
 "cMeSafe"|32.0853|34.781768
 "Soldiers of Valor Foundation"|33.448377|-112.074037
 "prolep.si"|50.110922|8.682127
-"ProumoBox|zzz|-14.235004|-51.92528
+"ProumoBox"|-14.235004|-51.92528
 "Stikeestore.com"|45.815011|15.981919
 "Zuvaa"|40.712784|-74.005941
 "Founders Bloc"|40.712784|-74.005941
@@ -842,7 +842,7 @@ Name|LAT|LON
 "SAPROPEET CANADA"|42.98695|-81.243177
 "The Body Challenge"|25.204849|55.270783
 "Realibrium"|25.790654|-80.130045
-"Rota Urbana|zzz|-1.455755|-48.49018
+"Rota Urbana"|-1.455755|-48.49018
 "ONGAB"|27.751828|-82.626734
 "kassomat"|52.520007|13.404954
 "ShoeBox"|39.800655|-76.983036
@@ -866,7 +866,7 @@ Name|LAT|LON
 "CPRbase"|45.523062|-122.676482
 "Myish"|43.653226|-79.383184
 "Empowrr"|38.907192|-77.036871
-"X-ROL S.A.S.|zzz|6.253041|-75.564574
+"X-ROL S.A.S."|6.253041|-75.564574
 "Docs9"|35.689488|139.691706
 "Salty Dog Tactical"|41.203322|-77.194525
 "Bucking Bee Vacation Resort"|30.267153|-97.743061
@@ -874,13 +874,13 @@ Name|LAT|LON
 "Geliyoo"|41.008238|28.978359
 "OnlineTehno Group SRL"|47.010453|28.86381
 "Powers Device Technologies"|26.934225|-80.094209
-"Bee Baby|zzz|-30.034647|-51.217658
+"Bee Baby"|-30.034647|-51.217658
 "Truehome"|30.267153|-97.743061
 "SenseCube"|48.856614|2.352222
 "TechistWeb"|26.912434|75.787271
 "SharkWave"|55.008353|82.935733
 "vBSocial"|26.142036|-81.79481
-"UrbanFarmTrading|zzz|-22.909938|-47.062633
+"UrbanFarmTrading"|-22.909938|-47.062633
 "Wooshade Caps"|34.052234|-118.243685
 "FoundMissing "|43.653226|-79.383184
 "Looqsh"|46.056947|14.505751
@@ -973,7 +973,7 @@ Name|LAT|LON
 "HommyFood"|31.804381|34.655314
 "Model Citizen"|40.712784|-74.005941
 "Curbcity"|44.231172|-76.485954
-"QSIL's The Fundraiser|zzz|-40.900557|174.885971
+"QSIL's The Fundraiser"|-40.900557|174.885971
 "Ebb and Flow"|35.759573|-79.0193
 "Geopay.me"|27.965853|-82.800103
 "Addictive Performance"|29.760427|-95.369803
@@ -988,16 +988,16 @@ Name|LAT|LON
 "MediCloud DSS"|32.0853|34.781768
 "iSoccer"|37.77493|-122.419416
 "Auto Secure"|26.461463|-80.07282
-"qpquo|zzz|-46.363881|168.018194
+"qpquo"|-46.363881|168.018194
 "Open Door Global"|48.191989|-114.316813
 "Ds Nuts N Butts"|33.748995|-84.387982
-"Shenzhen Rongyu Tech Co.|zzz|22.543099|114.057868
-"CashCapp|zzz|-33.932104|18.860152
+"Shenzhen Rongyu Tech Co."|22.543099|114.057868
+"CashCapp"|-33.932104|18.860152
 "RyzeTV"|51.507351|-0.127758
 "Morevoucher"|51.507351|-0.127758
 "iussu d.o.o"|45.1|15.2
-"Quainted|zzz|-26.204103|28.047305
-"TPTT Travel Academy|zzz|-26.260724|28.463038
+"Quainted"|-26.204103|28.047305
+"TPTT Travel Academy"|-26.260724|28.463038
 "Supergadgets"|51.507351|-0.127758
 "Starac"|43.508132|16.440193
 "tagMap"|37.507159|-122.260522
@@ -1013,7 +1013,7 @@ Name|LAT|LON
 "Purveyour"|35.77959|-78.638179
 "Tillister"|59.329323|18.068581
 "ZeroGox.com"|45.501689|-73.567256
-"NyceBy:|zzz|40.712784|-74.005941
+"NyceBy:"|40.712784|-74.005941
 "Cherry Bird"|51.507351|-0.127758
 "AidComputer"|47.010453|28.86381
 "iBidGames Interactive "|36.169941|-115.13983
@@ -1024,7 +1024,7 @@ Name|LAT|LON
 "Vysoko Systems"|50.82253|-0.137163
 "Wonderland.Travel"|50.4501|30.5234
 "WoodMarket.eu"|51.507351|-0.127758
-"ArchitectureLive!|zzz|28.613939|77.209021
+"ArchitectureLive!"|28.613939|77.209021
 "luxe-voyager.com"|41.878114|-87.629798
 "1000mW pointeur laser vert "|48.856614|2.352222
 "PinBud"|51.048615|-114.070846
@@ -1032,12 +1032,12 @@ Name|LAT|LON
 "Oxriver Capital"|30.22409|-92.019843
 "AnswerFair.com"|40.712784|-74.005941
 "Eusic"|51.752021|-1.257726
-"Ofertas de E-mail|zzz|-14.235004|-51.92528
+"Ofertas de E-mail"|-14.235004|-51.92528
 "neoeva"|53.551085|9.993682
 "Advice Wallet"|37.77493|-122.419416
 "Myish Inc. "|43.653226|-79.383184
 "Gourmet Hotdog Cafe"|3.139003|101.686855
-"ALLPlayer Group sp. z o.o. sp.k.|zzz|50.06465|19.94498
+"ALLPlayer Group sp. z o.o. sp.k."|50.06465|19.94498
 "BorderFly"|37.386052|-122.083851
 "PeSoMe"|43.653226|-79.383184
 "Intelletech"|41.763711|-72.685093
@@ -1065,7 +1065,7 @@ Name|LAT|LON
 "Venufy"|55.378051|-3.435973
 "Content Games"|43.653226|-79.383184
 "Moddo"|48.379433|31.16558
-"Zink Shirts, L.L.C.|zzz|43.455346|-76.510497
+"Zink Shirts, L.L.C."|43.455346|-76.510497
 "MESI "|46.056947|14.505751
 "Postnd"|38.423734|27.142826
 "TAJINTECH CORP. DBA-AIRCLEAR  ENERGY"|39.045755|-76.641271
@@ -1081,7 +1081,7 @@ Name|LAT|LON
 "Aturma Systems"|37.338208|-121.886329
 "World Biotechnology"|40.712784|-74.005941
 "AMARAMCO"|40.712784|-74.005941
-"Coxswain Mobile app - Via Mobil|zzz|-18.914608|-48.27538
+"Coxswain Mobile app - Via Mobil"|-18.914608|-48.27538
 "Grocer E-Store"|29.760427|-95.369803
 "Locus Techsoft"|18.52043|73.856744
 "Veterans Aide Foundation"|28.078072|-82.763713
@@ -1093,7 +1093,7 @@ Name|LAT|LON
 "HeraldsonPost"|52.205337|0.121817
 "Cholula Nightlife"|19.041297|-98.2062
 "ALLchemia"|52.229676|21.012229
-"Yibbly!|zzz|40.712784|-74.005941
+"Yibbly!"|40.712784|-74.005941
 "abjjad"|31.956578|35.945695
 "SMARF Data Crowding"|41.033986|-73.76291
 "ILLUM CLOTHING"|33.748995|-84.387982
@@ -1107,10 +1107,10 @@ Name|LAT|LON
 "Ecstatic Travel Group"|36.835426|-76.298274
 "Reserva"|40.712784|-74.005941
 "Piicmi"|40.712784|-74.005941
-"#bio (Energy Technologies Ltd)|zzz|48.379433|31.16558
-"Sé Parte - Crowdfunding Paraguay|zzz|-25.26374|-57.575926
+"#bio (Energy Technologies Ltd)"|48.379433|31.16558
+"Sé Parte - Crowdfunding Paraguay"|-25.26374|-57.575926
 "AlphaPackers"|12.971599|77.594563
-"GankerS Entertainment|zzz|-6.917464|107.619123
+"GankerS Entertainment"|-6.917464|107.619123
 "Enterprise Energy Services"|40.423314|-104.709132
 "Perfblogger"|40.712784|-74.005941
 "Crowned King"|33.748995|-84.387982
@@ -1160,11 +1160,11 @@ Name|LAT|LON
 "iOfixit "|26.076478|-80.252116
 "PSS Herbs India"|20.593684|78.96288
 "ADVANCED UNIVERSAL TECH"|45.638728|-122.661486
-"Global Blast Solution|zzz|-0.789275|113.921327
+"Global Blast Solution"|-0.789275|113.921327
 "Surfme"|48.856614|2.352222
 "Automatic Trading"|35.689488|139.691706
-"Harpia Projetos|zzz|-14.235004|-51.92528
-"ThirstyCrow E - Business Pvt.|zzz|19.075984|72.877656
+"Harpia Projetos"|-14.235004|-51.92528
+"ThirstyCrow E - Business Pvt."|19.075984|72.877656
 "B. C. Watson, Your Supermarket Hero"|40.712784|-74.005941
 "ELLES    "|34.092809|-118.328661
 "CurateKing"|30.267153|-97.743061
@@ -1178,9 +1178,9 @@ Name|LAT|LON
 "Blackbird.co"|48.856614|2.352222
 "DaftRun"|52.059935|-9.504427
 "Outsourcers Local"|44.012122|-92.480199
-"Sirias|zzz|-35.675147|-71.542969
+"Sirias"|-35.675147|-71.542969
 "Yellowbox"|46.482526|30.72331
-"HourHotels.com|zzz|-23.55052|-46.633309
+"HourHotels.com"|-23.55052|-46.633309
 "Voodoo"|48.856614|2.352222
 "Alfa Loem"|19.70595|-101.194982
 "Startup Miner"|37.229573|-80.413939
@@ -1200,7 +1200,7 @@ Name|LAT|LON
 "Black Fox Meadery"|28.078072|-82.763713
 "softsoft"|34.052234|-118.243685
 "vLance.vn"|21.027764|105.83416
-"Inapay|zzz|-6.308865|106.682188
+"Inapay"|-6.308865|106.682188
 "TIEMAC"|33.748995|-84.387982
 "Esteemed Treasures"|37.540725|-77.436048
 "The Mathist"|43.320902|21.895759
@@ -1211,10 +1211,10 @@ Name|LAT|LON
 "MindGear"|37.386052|-122.083851
 "FamiJoy"|19.075984|72.877656
 "Mighty Cast"|45.501689|-73.567256
-"KazVtorPlast Co.|zzz|52.287303|76.967402
+"KazVtorPlast Co."|52.287303|76.967402
 "Web development Company Detroit"|40.712784|-74.005941
 "Geek Styling"|37.77493|-122.419416
-"Qiqit!|zzz|34.052234|-118.243685
+"Qiqit!"|34.052234|-118.243685
 "Intoxicated"|36.169941|-115.13983
 "Charity Auto Club"|33.448377|-112.074037
 "Docalytics"|44.953703|-93.089958
@@ -1267,7 +1267,7 @@ Name|LAT|LON
 "Street Fight"|40.014986|-105.270546
 "night-job AG"|47.376887|8.541694
 "Education line"|46.482526|30.72331
-"FINTRUE TECHNOLOGIES PVT.|zzz|19.075984|72.877656
+"FINTRUE TECHNOLOGIES PVT."|19.075984|72.877656
 "Viepage"|40.712784|-74.005941
 "Antolek Interactive"|54.352025|18.646638
 "Paytagz"|37.386052|-122.083851
@@ -1285,7 +1285,7 @@ Name|LAT|LON
 "Sameera techno solutions"|17.385044|78.486671
 "Simav"|52.040622|-0.759417
 "RegalWorks Media"|34.019454|-118.491191
-"iMeal Pty|zzz|-33.867487|151.20699
+"iMeal Pty"|-33.867487|151.20699
 "Contestgram"|45.070312|7.686856
 "SociGroups"|37.540725|-77.436048
 "Aircard"|43.073052|-89.40123
@@ -1294,7 +1294,7 @@ Name|LAT|LON
 "Foodlogic"|48.145892|17.107137
 "Pikit"|38.252665|-85.758456
 "Bagolf"|25.76168|-80.19179
-"Ezylife Kenya|zzz|-1.292066|36.821946
+"Ezylife Kenya"|-1.292066|36.821946
 "GymSideKick"|47.497912|19.040235
 "AvaCon"|42.360083|-71.05888
 "Crooked Creek"|44.068202|-114.742041
@@ -1305,10 +1305,10 @@ Name|LAT|LON
 "Alive - Premium Electronic Cigarettes"|26.122439|-80.137317
 "Condo Motion"|41.878114|-87.629798
 "Troy Bohlke - 10 Day Publicity "|33.448377|-112.074037
-"VirtualGC|zzz|-6.202394|106.65271
+"VirtualGC"|-6.202394|106.65271
 "Socialhappen"|13.756331|100.501765
 "Green On"|48.856614|2.352222
-"AlertsCentral|zzz|-26.204103|28.047305
+"AlertsCentral"|-26.204103|28.047305
 "favics"|53.551085|9.993682
 "Nqyer"|52.520007|13.404954
 "Cloud306"|50.075538|14.4378
@@ -1319,11 +1319,11 @@ Name|LAT|LON
 "Fuzmo"|51.62144|-3.943646
 "H20 Pop up Portable Hookah Lounge"|34.052234|-118.243685
 "YuMovil"|20.422984|-86.922343
-"BUYONNET Sp.z o.o.|zzz|52.229676|21.012229
+"BUYONNET Sp.z o.o."|52.229676|21.012229
 "Tasten"|45.501689|-73.567256
 "Instantly Social"|39.290385|-76.612189
 "The Coffret"|45.439695|4.387178
-"Bom Apetite|zzz|-30.034647|-51.217658
+"Bom Apetite"|-30.034647|-51.217658
 "NextTopEvent"|21.027764|105.83416
 "Krishi Star"|19.075984|72.877656
 "Sade Wellness"|38.907192|-77.036871
@@ -1349,7 +1349,7 @@ Name|LAT|LON
 "Poke Hawaiian Restaurant"|40.755656|-73.587627
 "P.Solutions"|28.613939|77.209021
 "EFFICIENCIA"|43.604652|1.444209
-"Adsnile Technology|zzz|-18.920133|29.823655
+"Adsnile Technology"|-18.920133|29.823655
 "Capserve Ventures"|32.715738|-117.161084
 "Glow Traffic"|40.712784|-74.005941
 "Koolives"|22.543099|114.057868
@@ -1362,7 +1362,7 @@ Name|LAT|LON
 "iTown"|57.005067|40.976645
 "Mediagit"|40.409262|49.867092
 "Jaimie Jacobs"|48.135125|11.581981
-"SA Envitech a.s.|zzz|50.075538|14.4378
+"SA Envitech a.s."|50.075538|14.4378
 "Channll"|51.507351|-0.127758
 "Qeeub"|6.524379|3.379206
 "ARTEMIS Space"|53.480759|-2.242631
@@ -1371,8 +1371,8 @@ Name|LAT|LON
 "HomeWorks"|38.677959|-121.176058
 "Mobilemock.IO"|39.904211|116.407395
 "Matrix-Box"|40.712784|-74.005941
-"XPAT IP Services Pvt.|zzz|28.408912|77.317789
-"Centurion Oil and Gas, LLC (Dubai)|zzz|25.204849|55.270783
+"XPAT IP Services Pvt."|28.408912|77.317789
+"Centurion Oil and Gas, LLC (Dubai)"|25.204849|55.270783
 "iPot®  Inc. "|34.052234|-118.243685
 "BizzSim Business Simulation"|41.008238|28.978359
 "Smokey Hollow MX"|43.78444|-88.787868
@@ -1380,7 +1380,7 @@ Name|LAT|LON
 "Addiction Guide"|45.638728|-122.661486
 "KantWait"|40.11642|-88.243383
 "MoJo Spice Mixes & Rubs"|44.314844|-85.602364
-"Preditiva|zzz|-14.235004|-51.92528
+"Preditiva"|-14.235004|-51.92528
 "box-planner"|51.507351|-0.127758
 "What-The-Buck--Gifts & More"|45.523062|-122.676482
 "Diwaly.com"|18.52043|73.856744
@@ -1414,7 +1414,7 @@ Name|LAT|LON
 "Panasoft"|38.402136|-122.823881
 "Dresses Plaza"|40.712784|-74.005941
 "locus4u"|46.165912|14.571969
-"Socialmeet.me|zzz|-12.046374|-77.042793
+"Socialmeet.me"|-12.046374|-77.042793
 "SnailMailPics"|41.878114|-87.629798
 "Amplify.ph"|12.879721|121.774017
 "Have To Try It"|32.715738|-117.161084
@@ -1429,7 +1429,7 @@ Name|LAT|LON
 "FlyPeeps"|33.683947|-117.794694
 "Kidini Karate"|39.739072|-75.539788
 "ConnectToHome"|40.236449|-83.367143
-"TapCave|zzz|-7.119496|-34.845012
+"TapCave"|-7.119496|-34.845012
 "WitGet"|55.755826|37.6173
 "Espro"|32.666933|-16.924055
 "Platinum Collection Company"|29.760427|-95.369803
@@ -1437,16 +1437,16 @@ Name|LAT|LON
 "Bursadeanvelope"|46.77121|23.623635
 "SeoerTools"|21.027764|105.83416
 "Happy Studies"|48.856614|2.352222
-"Dibs!|zzz|25.76168|-80.19179
+"Dibs!"|25.76168|-80.19179
 "Halli Oota"|12.971599|77.594563
 "Good Spot"|48.856614|2.352222
-"WOM Online Marketing|zzz|-26.204103|28.047305
+"WOM Online Marketing"|-26.204103|28.047305
 "Sollet Soft Solutions"|17.385044|78.486671
 "Hong Kong Tesla Technology"|22.396428|114.109497
-"Teinvité.com|zzz|-34.603684|-58.381559
+"Teinvité.com"|-34.603684|-58.381559
 "Couch One I.T. Solutions"|38.040584|-84.503716
 "Kabazzled"|45.056004|-92.808844
-"Squid Facil|zzz|-23.50153|-47.45256
+"Squid Facil"|-23.50153|-47.45256
 "ActiveSwag"|40.712784|-74.005941
 "Hi-Fly Lifestyle"|33.748995|-84.387982
 "Tutto"|26.715342|-80.053375
@@ -1463,11 +1463,11 @@ Name|LAT|LON
 "NewOldMail"|50.4501|30.5234
 "CrowdCast"|35.689488|139.691706
 "jubi"|44.426767|26.102538
-"Soleil Insulation Co.|zzz|37.77493|-122.419416
+"Soleil Insulation Co."|37.77493|-122.419416
 ".Net Fiddle"|40.712784|-74.005941
-"Billy Co.|zzz|37.77493|-122.419416
-"Instaquadros|zzz|-22.906847|-43.172896
-"Monograme|zzz|-22.906847|-43.172896
+"Billy Co."|37.77493|-122.419416
+"Instaquadros"|-22.906847|-43.172896
+"Monograme"|-22.906847|-43.172896
 "KP Production "|30.984298|-91.962333
 "Ideal Impact"|38.907192|-77.036871
 "INTP Square Malaysia"|3.139003|101.686855
@@ -1475,8 +1475,8 @@ Name|LAT|LON
 "Meeting To You "|39.758948|-84.191607
 "ethosU"|29.651634|-82.324826
 "Jamstir"|33.748995|-84.387982
-"Vitail |zzz|-33.867487|151.20699
-"memeBig.com|zzz|-27.471011|153.023449
+"Vitail "|-33.867487|151.20699
+"memeBig.com"|-27.471011|153.023449
 "Boomy Studio"|44.838124|11.619787
 "Teamparts"|61.52401|105.318756
 "NanoNutrition Laboratories"|41.878114|-87.629798
@@ -1489,35 +1489,35 @@ Name|LAT|LON
 "QR Artist"|45.638728|-122.661486
 "Smash Restobar"|14.599512|120.98422
 "Veraxon Entertainment"|40.712784|-74.005941
-"DigiTV Software|zzz|-34.901113|-56.164531
+"DigiTV Software"|-34.901113|-56.164531
 "Pan Tostado Siciliano"|27.950575|-82.457178
 "FlightHike"|39.103118|-84.51202
 "Locappy"|51.507351|-0.127758
-"Destiny Coaching|zzz|-26.204103|28.047305
+"Destiny Coaching"|-26.204103|28.047305
 "PROSPR"|37.77493|-122.419416
 "Sociatag"|33.888629|35.495479
-"Cyberknife4oz|zzz|-33.867487|151.20699
+"Cyberknife4oz"|-33.867487|151.20699
 "Flinqo"|26.238947|73.024309
 "Tuneslim"|39.952584|-75.165222
 "Sky Homes"|42.360083|-71.05888
-"Independent Artist Competition Assoc.|zzz|34.052234|-118.243685
+"Independent Artist Competition Assoc."|34.052234|-118.243685
 "Triage Revival Project"|40.60967|-111.939103
 "Rumming"|31.956578|35.945695
 "TIVIKO"|54.525961|15.255119
 "LookMedBook"|55.755826|37.6173
 "Test company"|48.856614|2.352222
-"Little Sale Birdy|zzz|-33.867487|151.20699
+"Little Sale Birdy"|-33.867487|151.20699
 "YouNationwide.com"|29.760427|-95.369803
 "Suzy Foods"|30.267153|-97.743061
 "Valuueba.com"|28.613939|77.209021
 "Stylematic.co"|37.77493|-122.419416
-"Danzan d.o.o.|zzz|46.151241|14.995463
+"Danzan d.o.o."|46.151241|14.995463
 "Dream Machine Association"|32.776664|-96.796988
 "spider-mantis"|10.315699|123.885437
 "Bolche' by Nall"|30.522972|-87.903326
 "chartoncloud"|12.879721|121.774017
 "YI-QI"|34.341568|108.940175
-"Tiendco|zzz|-34.603684|-58.381559
+"Tiendco"|-34.603684|-58.381559
 "Centre for Grants, Contact and Business"|34.052234|-118.243685
 "Collin's Custom IP"|37.804364|-122.271114
 "Innoventius"|40.760779|-111.891047
@@ -1530,7 +1530,7 @@ Name|LAT|LON
 "Hippe"|17.385044|78.486671
 "QPIN"|29.760427|-95.369803
 "Dresser"|47.65878|-117.426047
-"Wedding Okay !|zzz|12.971599|77.594563
+"Wedding Okay !"|12.971599|77.594563
 "Wealth Taxi"|34.052234|-118.243685
 "Bawn Media Networks"|34.052234|-118.243685
 "FIGHT CAMP"|34.052234|-118.243685
@@ -1586,7 +1586,7 @@ Name|LAT|LON
 "The Tropica Group"|1.352083|103.819836
 "GlassRoom Marketing"|34.07362|-118.400356
 "Watch it for me"|40.712784|-74.005941
-"Torlem|zzz|-14.235004|-51.92528
+"Torlem"|-14.235004|-51.92528
 "P-HGH"|30.332184|-81.655651
 "Renaissance Man"|6.524379|3.379206
 "Foresight optometrics, PC"|42.360083|-71.05888
@@ -1601,21 +1601,21 @@ Name|LAT|LON
 "StudiVUZ"|42.341685|69.590101
 "Keitra OÜ"|59.436961|24.753575
 "bilinah.com"|12.879721|121.774017
-"Xtreme Beach Volleyball|zzz|-6.792354|39.208328
+"Xtreme Beach Volleyball"|-6.792354|39.208328
 "Imagination Planet"|31.046051|34.851612
 "DTin"|55.755826|37.6173
 "STEM Edutainment Systems"|1.352083|103.819836
 "CATAPOOOLT"|19.075984|72.877656
-"SNOW-Kalika Trust (LLC)|zzz|34.233137|-102.410749
-"QMOTOR|zzz|-23.55052|-46.633309
+"SNOW-Kalika Trust (LLC)"|34.233137|-102.410749
+"QMOTOR"|-23.55052|-46.633309
 "Mango"|40.440625|-79.995886
 "WorldLight Websites"|45.523062|-122.676482
 "Eventauz"|51.507351|-0.127758
 "FileLife"|40.58654|-122.391675
 "Gibby's Guitar Boutique"|29.760427|-95.369803
-"Firepaperapp|zzz|-33.924868|18.424055
+"Firepaperapp"|-33.924868|18.424055
 "Saker Aircraft"|34.052234|-118.243685
-"Select Racing|zzz|-25.274398|133.775136
+"Select Racing"|-25.274398|133.775136
 "m3dot0.com"|14.599512|120.98422
 "HelloPerk"|41.763711|-72.685093
 "Skywall"|37.77493|-122.419416
@@ -1627,18 +1627,18 @@ Name|LAT|LON
 "Fashion Island"|36.926927|14.725513
 "ParolZ"|6.524379|3.379206
 "rusotels.ru"|27.751828|-82.626734
-"Byowner Imp Exp Co|zzz|-14.235004|-51.92528
+"Byowner Imp Exp Co"|-14.235004|-51.92528
 "SpellAfrica Initiative"|6.334986|5.603746
-"Lenana Financial|zzz|-1.292066|36.821946
+"Lenana Financial"|-1.292066|36.821946
 "Roboticssa"|40.463667|-3.74922
 "at60inches"|40.712784|-74.005941
-"Cove|zzz|-33.924868|18.424055
+"Cove"|-33.924868|18.424055
 "All About Technology"|42.331427|-83.045754
 "bidorbankit.com"|40.760779|-111.891047
 "Cinch"|40.760779|-111.891047
 "faynodev"|50.4501|30.5234
-"Santh CleanEnergy Microgrid (SCEM)|zzz|28.538336|-81.379236
-"New Skool Wrestling (NSW)|zzz|44.475883|-73.212072
+"Santh CleanEnergy Microgrid (SCEM)"|28.538336|-81.379236
+"New Skool Wrestling (NSW)"|44.475883|-73.212072
 "LetsGram"|47.60621|-122.332071
 "Meet&Eat"|55.755826|37.6173
 "nobrandsolution srl"|45.465422|9.185924
@@ -1651,7 +1651,7 @@ Name|LAT|LON
 "Fitness 4 U Online"|39.768403|-86.158068
 "Epithia"|44.786568|20.448922
 "Performa Sports"|54.597285|-5.93012
-"zuEuz Tecnologia & Negócios|zzz|-23.50153|-47.45256
+"zuEuz Tecnologia & Negócios"|-23.50153|-47.45256
 "POLCOALDEX"|54.352025|18.646638
 "CamJak Products"|29.760427|-95.369803
 "Fancy Boat"|37.77493|-122.419416
@@ -1675,7 +1675,7 @@ Name|LAT|LON
 "The Dreamers - A YA Fantasy Adventure"|33.046233|-96.994174
 "KeyPS"|45.638728|-122.661486
 "Dreamokratia"|55.755826|37.6173
-"Insane Gorilla|zzz|-34.928621|138.599959
+"Insane Gorilla"|-34.928621|138.599959
 "WordSentry"|39.768403|-86.158068
 "Shinobi Security"|40.712784|-74.005941
 "MyWishBoard"|55.755826|37.6173
@@ -1693,10 +1693,10 @@ Name|LAT|LON
 "Bigforce"|35.9132|-79.055845
 "boxUno"|40.014986|-105.270546
 "ProvectaPOS"|47.010453|28.86381
-"Outsource Brazil|zzz|-22.906847|-43.172896
+"Outsource Brazil"|-22.906847|-43.172896
 "VibeWrite"|51.165691|10.451526
 "Effortless Aquaponics"|44.564566|-123.262043
-"Eat Cheap|zzz|-31.953513|115.857047
+"Eat Cheap"|-31.953513|115.857047
 "New-Tams"|44.669781|-74.981308
 "Netwrkr"|25.76168|-80.19179
 "Lateral View"|37.77493|-122.419416
@@ -1717,9 +1717,9 @@ Name|LAT|LON
 "appssolut"|46.63646|14.312225
 "Wing Ma'am"|40.440625|-79.995886
 "popularc"|48.135125|11.581981
-"Connect Media|zzz|-1.292066|36.821946
+"Connect Media"|-1.292066|36.821946
 "Novum Concepts"|39.739236|-104.990251
-"neargram|zzz|-1.292066|36.821946
+"neargram"|-1.292066|36.821946
 "achatlaser.com"|18.018358|-94.678624
 "Rainbow Vibes Clothing"|36.169941|-115.13983
 "Equitech International"|38.627003|-90.199404
@@ -1764,7 +1764,7 @@ Name|LAT|LON
 "Fraktalia Studios"|59.436961|24.753575
 "Chance"|25.76168|-80.19179
 "Pirx"|50.06465|19.94498
-"Linktivate Business Network|zzz|-26.204103|28.047305
+"Linktivate Business Network"|-26.204103|28.047305
 "Smart Sensors Institute"|54.687156|25.279651
 "MD.Voice"|55.755826|37.6173
 "PUBGLIC Service"|12.879721|121.774017
@@ -1783,7 +1783,7 @@ Name|LAT|LON
 "myhappyscore.com"|37.885758|-122.11802
 "shmartochki"|27.751828|-82.626734
 "Eubios Therapeutica Private"|17.385044|78.486671
-"TIERRA PERUANA (Peruvian Land)|zzz|-12.046374|-77.042793
+"TIERRA PERUANA (Peruvian Land)"|-12.046374|-77.042793
 "höwlnotifys"|17.385044|78.486671
 "Products for Robots"|33.748995|-84.387982
 "Speedoodle"|45.523062|-122.676482
@@ -1792,14 +1792,14 @@ Name|LAT|LON
 "Small Map"|47.60621|-122.332071
 "Vasyl's Pizza"|43.038903|-87.906474
 "Overwatch"|34.769536|-92.267094
-"Integrated Industry Ecology Pty.Ltd |zzz|-27.471011|153.023449
+"Integrated Industry Ecology Pty.Ltd "|-27.471011|153.023449
 "H2 MO2ORS"|42.101483|-72.589811
 "Foodie Feasts"|28.083627|-80.608109
 "T.H.I.S"|37.971559|-87.57109
 "Skip Thomas Productions"|41.593105|-81.526787
 "TastyTripApp"|46.77121|23.623635
 "Beauty Salon Delivery"|20.659699|-103.349609
-"Food Porn T Shirt Co.|zzz|35.198284|-111.651302
+"Food Porn T Shirt Co."|35.198284|-111.651302
 "The News In Two"|34.052234|-118.243685
 "Pillar Games"|30.421309|-87.216915
 "Cinegif"|30.267153|-97.743061
@@ -1824,9 +1824,9 @@ Name|LAT|LON
 "Mens Wellness Centers"|36.169941|-115.13983
 "memmo"|18.486058|-69.931212
 "Infrax Systems"|27.751828|-82.626734
-"Crowder|zzz|-33.867487|151.20699
-"ufixmebd|zzz|-35.282|149.128684
-"PMK |zzz|-14.235004|-51.92528
+"Crowder"|-33.867487|151.20699
+"ufixmebd"|-35.282|149.128684
+"PMK "|-14.235004|-51.92528
 "Top Tier Performance"|38.252665|-85.758456
 "Warrior Gymnasia"|39.739236|-104.990251
 "StarSpot Live"|32.715738|-117.161084
@@ -1836,7 +1836,7 @@ Name|LAT|LON
 "SadCheese"|53.408371|-2.991573
 "Freak Minds Recreation & Entertainment"|28.613939|77.209021
 "XiaoSheng.fm"|39.904211|116.407395
-"backpackeragency|zzz|-33.867487|151.20699
+"backpackeragency"|-33.867487|151.20699
 "BUILD"|37.77493|-122.419416
 "DubaiMART.com"|25.204849|55.270783
 "Los Angeles Diversity Film Festival"|34.052234|-118.243685
@@ -1844,7 +1844,7 @@ Name|LAT|LON
 "Magnus Gyan"|40.712784|-74.005941
 "Internet Media Empire"|39.952584|-75.165222
 "The Magic Mist"|42.325578|-87.841182
-"nickvopsteele (NVS)|zzz|41.878114|-87.629798
+"nickvopsteele (NVS)"|41.878114|-87.629798
 "AccessABLE"|39.32924|-82.101255
 "MossmanEvents"|43.653226|-79.383184
 "SongTangle"|39.099727|-94.578567
@@ -1873,15 +1873,15 @@ Name|LAT|LON
 "ethTV"|37.338208|-121.886329
 "All Er Nothing Productions"|39.768403|-86.158068
 "The Legally Steal Show"|27.950575|-82.457178
-"MicroLocation |zzz|-21.762424|-43.3434
+"MicroLocation "|-21.762424|-43.3434
 "Ziptek"|27.336435|-82.530653
-"Senor Pescador Ltd. Co.|zzz|33.68906|-78.886694
+"Senor Pescador Ltd. Co."|33.68906|-78.886694
 "Mexo"|37.338208|-121.886329
 "Ghar360"|12.971599|77.594563
 "iDecorate "|22.396428|114.109497
-"MoveOn MobTech|zzz|-19.916681|-43.934493
+"MoveOn MobTech"|-19.916681|-43.934493
 "Romanoff S.A"|40.712784|-74.005941
-"Cumi|zzz|-17.825166|31.03351
+"Cumi"|-17.825166|31.03351
 "Web Development Company"|30.604981|74.255787
 "Skyhigh Visual Communications"|60.173324|24.941025
 "The Deborah Interviews Show"|36.169941|-115.13983
@@ -1892,7 +1892,7 @@ Name|LAT|LON
 "Live Fly"|40.712784|-74.005941
 "The Beverly Dentistry"|34.07362|-118.400356
 "Kumo"|4.710989|-74.072092
-"Palo Alto Comunicação Digital|zzz|-19.916681|-43.934493
+"Palo Alto Comunicação Digital"|-19.916681|-43.934493
 "HIVE"|14.599512|120.98422
 "NeuroTek Medical"|32.776664|-96.796988
 "TheeKornerStore.com "|34.052234|-118.243685
@@ -1905,18 +1905,18 @@ Name|LAT|LON
 "Toothpick Guide"|25.76168|-80.19179
 "Sun Robotics"|33.598394|73.044135
 "Shift Energy Group"|33.448377|-112.074037
-"SAMAPOS|zzz|-33.867487|151.20699
+"SAMAPOS"|-33.867487|151.20699
 "Social Point"|25.686614|-100.316113
 "Witit"|30.267153|-97.743061
 "LOC Enterprises"|39.103118|-84.51202
 "MajicFilms Entertainment"|40.712784|-74.005941
-"ELM BABY LLC (www.elmlbaby.com)|zzz|32.941236|-97.134178
+"ELM BABY LLC (www.elmlbaby.com)"|32.941236|-97.134178
 "talkd"|41.008238|28.978359
 "Cuz-D manufacturing"|47.037874|-122.900695
 "Medusa CMS"|30.267153|-97.743061
 "C&C Cannabis Company"|47.60621|-122.332071
 "Cyclops Gear"|39.739236|-104.990251
-"WyP|zzz|-23.50153|-47.45256
+"WyP"|-23.50153|-47.45256
 "KidzMat Global Enterprises"|32.776664|-96.796988
 "Venuefox"|41.600545|-93.609106
 "SalesScripter"|29.760427|-95.369803
@@ -1930,7 +1930,7 @@ Name|LAT|LON
 "Jotgram"|33.748995|-84.387982
 "Sweet Spot Productions"|34.420831|-119.69819
 "Crowd Sense Technologies"|42.697708|23.321868
-"Citizen Journalism|zzz|-27.471011|153.023449
+"Citizen Journalism"|-27.471011|153.023449
 "doBrasilShop.com"|40.712784|-74.005941
 "Travellers Club"|19.075984|72.877656
 "Shut Down"|39.613321|-105.01665
@@ -1938,7 +1938,7 @@ Name|LAT|LON
 "Wroblewski Aircraft"|40.440625|-79.995886
 "Ignite Social Web"|33.629234|-112.367928
 "Gaia One"|26.142036|-81.79481
-"Gremarol Pty|zzz|-33.867487|151.20699
+"Gremarol Pty"|-33.867487|151.20699
 "HRsoft"|28.538336|-81.379236
 "The S Kumar Talk Show"|37.338208|-121.886329
 "Partimer A Lakshmi LLC Company"|37.441883|-122.143019
@@ -1948,11 +1948,11 @@ Name|LAT|LON
 "RosterReport"|43.653226|-79.383184
 "NovoGenie"|61.92411|25.748151
 "MaglevTrans"|30.267153|-97.743061
-"Quierenentradas.com|zzz|-34.603684|-58.381559
+"Quierenentradas.com"|-34.603684|-58.381559
 "Wise World 2012 "|22.396428|114.109497
 "MaglevTrans"|30.267153|-97.743061
 "ChipperList"|32.715738|-117.161084
-"LubriMan (think: Jiffy Lube on Wheels)|zzz|40.712784|-74.005941
+"LubriMan (think: Jiffy Lube on Wheels)"|40.712784|-74.005941
 "Adatkocka"|47.497912|19.040235
 "kinCORP"|0.347596|32.58252
 "AFK Gamer Lounge"|37.387474|-122.057543
@@ -1974,7 +1974,7 @@ Name|LAT|LON
 "Soxiety"|51.507351|-0.127758
 "ShopInPower"|37.09024|-95.712891
 "InLoc8"|8.524139|76.936638
-"Lake Zone Charter Services|zzz|-2.51643|32.917452
+"Lake Zone Charter Services"|-2.51643|32.917452
 "Yes Man Watches"|32.715738|-117.161084
 "Super1003"|34.052234|-118.243685
 "Perkins Energy Partners"|33.683947|-117.794694
@@ -1985,9 +1985,9 @@ Name|LAT|LON
 "Scripts"|45.267135|19.83355
 "Becky Laura's Homecare"|34.052234|-118.243685
 "HealthForce Automations"|41.763711|-72.685093
-"PocketRent|zzz|-40.900557|174.885971
+"PocketRent"|-40.900557|174.885971
 "20 Questions"|37.338208|-121.886329
-"Air Bay Creative (Hong Kong)|zzz|22.543099|114.057868
+"Air Bay Creative (Hong Kong)"|22.543099|114.057868
 "The Warehouse"|41.600545|-93.609106
 "Payr"|41.49932|-81.694361
 "Set4Golf"|39.739236|-104.990251
@@ -2000,7 +2000,7 @@ Name|LAT|LON
 "Little details"|25.204849|55.270783
 "Plastbot Industries"|44.494887|11.342616
 "BankmyBiz.com"|43.073052|-89.40123
-"GYMOline|zzz|-12.046374|-77.042793
+"GYMOline"|-12.046374|-77.042793
 "Citizen In Need"|40.712784|-74.005941
 "Game Labs"|50.4501|30.5234
 "Pupakiotti "|45.465422|9.185924
@@ -2019,7 +2019,7 @@ Name|LAT|LON
 "PetBookings"|36.555239|-121.923288
 "Forever Yogurt "|41.878114|-87.629798
 "DriveAngel"|51.507351|-0.127758
-"Triple Edge Service|zzz|-23.967882|-46.328887
+"Triple Edge Service"|-23.967882|-46.328887
 "coTrain"|12.971599|77.594563
 "DreamLease"|37.77493|-122.419416
 "Buysumo Resources Company "|1.607681|110.378544
@@ -2057,13 +2057,13 @@ Name|LAT|LON
 "#TNM The New Music Movement "|40.273191|-76.886701
 "Masterhive"|43.653226|-79.383184
 "Sabina Oil & Gas"|32.776664|-96.796988
-"Casa America|zzz|-22.422971|-45.460251
+"Casa America"|-22.422971|-45.460251
 "Cliclock"|37.77493|-122.419416
 "NERD BAR "|33.68906|-78.886694
 "MeTee"|35.517491|-86.580447
 "Abyss Gaming"|45.638728|-122.661486
 "Alliphant"|37.235808|-121.962375
-"BluWave Software|zzz|-26.204103|28.047305
+"BluWave Software"|-26.204103|28.047305
 "RoadAR"|55.830431|49.066081
 "J. Opulence No. 5 in Fm"|39.097283|-93.617172
 "Moonfrye"|34.052234|-118.243685
@@ -2074,7 +2074,7 @@ Name|LAT|LON
 "Examany.com"|19.876165|75.343314
 "VERTICRAFT"|26.142036|-81.79481
 "BonjourBonjour"|48.856614|2.352222
-"SiftDeck|zzz|-1.292066|36.821946
+"SiftDeck"|-1.292066|36.821946
 "SiteSecure"|55.755826|37.6173
 "Crazy Goat Studios"|31.768319|35.21371
 "JobReneur "|31.768319|35.21371
@@ -2089,7 +2089,7 @@ Name|LAT|LON
 "Sgnify"|41.878114|-87.629798
 "RoboKind"|32.776664|-96.796988
 "Pela Huevos de Costa Rica"|9.928069|-84.090725
-"Linkadu|zzz|-30.034647|-51.217658
+"Linkadu"|-30.034647|-51.217658
 "FlockMiner"|31.768319|35.21371
 "CloudWebStore"|34.07362|-118.400356
 "Court Square Photography"|27.950575|-82.457178
@@ -2103,16 +2103,16 @@ Name|LAT|LON
 "Small Data"|37.77493|-122.419416
 "Long IT Group"|37.839333|-84.270018
 "Vixxa"|37.77493|-122.419416
-"Drank South Africa|zzz|-26.204103|28.047305
+"Drank South Africa"|-26.204103|28.047305
 "stockickr"|37.77493|-122.419416
 "Loukretiv"|26.140364|-80.213381
 "W.O.D. Calgary"|51.048615|-114.070846
 "Cornfed Systems"|39.739236|-104.990251
 "XL2DB"|37.558547|-122.271079
 "iri"|41.140276|-100.760145
-"BRCK|zzz|-1.292066|36.821946
-"Spot|zzz|-14.235004|-51.92528
-"Best Furniture Ideas|zzz|-1.292066|36.821946
+"BRCK"|-1.292066|36.821946
+"Spot"|-14.235004|-51.92528
+"Best Furniture Ideas"|-1.292066|36.821946
 "HT Applications"|53.201233|5.799913
 "Breathe Radio"|37.77493|-122.419416
 "LoveAbles"|43.544596|-96.731103
@@ -2123,7 +2123,7 @@ Name|LAT|LON
 "Your Music Company"|34.052234|-118.243685
 "Trans*H4CK"|37.804364|-122.271114
 "Spacebar"|37.77493|-122.419416
-"ARTISANA|zzz|-12.046374|-77.042793
+"ARTISANA"|-12.046374|-77.042793
 "Greenvolved"|42.360083|-71.05888
 "LunarTuna Labs & Enterprises "|33.49417|-111.926052
 "GuestNetix"|40.391617|-111.850766
@@ -2137,7 +2137,7 @@ Name|LAT|LON
 "KAEPS SPORTS"|40.712784|-74.005941
 "Karlheim Auto Bids"|32.776664|-96.796988
 "Safety By Cloud Inc. "|52.133214|-106.670046
-"Advedia360|zzz|-6.208763|106.845599
+"Advedia360"|-6.208763|106.845599
 "Taylorcraft Airplane Company"|29.883275|-97.941394
 "MelStevia"|35.595058|-82.551487
 "Michael Sheldon Reed Design"|33.448377|-112.074037
@@ -2151,7 +2151,7 @@ Name|LAT|LON
 "Fortune Innovations Berlin"|52.520007|13.404954
 "Captivated Marketing Solutions"|53.544389|-113.490927
 "SOS Clothing"|40.712784|-74.005941
-"LJ Carroll|zzz|-33.867487|151.20699
+"LJ Carroll"|-33.867487|151.20699
 "App4page"|49.817492|15.472962
 "Konkourse"|38.907192|-77.036871
 "Hammercraft Const. & Development"|45.309723|9.503716
@@ -2163,11 +2163,11 @@ Name|LAT|LON
 "PsyProblems"|50.4501|30.5234
 "Pangianet"|34.233137|-102.410749
 "Bitmarkers"|36.169941|-115.13983
-"AllGreen Energy Pte.|zzz|12.971599|77.594563
+"AllGreen Energy Pte."|12.971599|77.594563
 "BSTinnovation"|42.878213|-8.544844
 "Middle Ridge"|32.715738|-117.161084
 "American Language University"|34.073902|-117.313655
-"Stalker Mobile App.|zzz|55.755826|37.6173
+"Stalker Mobile App."|55.755826|37.6173
 "Taletyme"|34.052234|-118.243685
 "LIG Energy Solutions"|11.468654|31.228296
 "Crafterstown"|33.448377|-112.074037
@@ -2181,7 +2181,7 @@ Name|LAT|LON
 "Katesmokes"|37.77493|-122.419416
 "Volo"|42.546701|-83.211319
 "Dynasty Sports and Gaming"|40.712784|-74.005941
-"Rapid search|zzz|-33.867487|151.20699
+"Rapid search"|-33.867487|151.20699
 "Ackuna"|40.728157|-74.077642
 "Lazarus Bioscience"|37.441883|-122.143019
 "Engine"|30.267153|-97.743061
@@ -2197,7 +2197,7 @@ Name|LAT|LON
 "Careeref"|40.712784|-74.005941
 "Pleso Capital Group"|40.440625|-79.995886
 "BlastPress"|40.712784|-74.005941
-"Arte Manifiesto|zzz|-12.046374|-77.042793
+"Arte Manifiesto"|-12.046374|-77.042793
 "Reaction Games"|33.77005|-118.193739
 "Parental Mingle"|30.267153|-97.743061
 "The Portal Shop"|33.748995|-84.387982
@@ -2217,7 +2217,7 @@ Name|LAT|LON
 "ARCBuro.com"|55.755826|37.6173
 "Yovdo"|12.971599|77.594563
 "PhDTree"|31.230416|121.473701
-"Australian GeoTomography|zzz|-31.953513|115.857047
+"Australian GeoTomography"|-31.953513|115.857047
 "Happy Families"|48.856614|2.352222
 "Cape Heart Technologies"|29.984092|-90.152852
 "BigFatFunMachine"|19.432608|-99.133208
@@ -2225,7 +2225,7 @@ Name|LAT|LON
 "Postargram"|25.76168|-80.19179
 "FotoFuze"|32.776664|-96.796988
 "Relatora"|37.77493|-122.419416
-"Acts1vs8.com|zzz|-26.204103|28.047305
+"Acts1vs8.com"|-26.204103|28.047305
 "ALGAentis- a USA C-Corp. UK LTD corp. "|51.507351|-0.127758
 "Directbook"|25.686614|-100.316113
 "This Week In Town"|42.187583|-71.30646
@@ -2233,7 +2233,7 @@ Name|LAT|LON
 "Music Wormhole"|36.974117|-122.030796
 "Retail Goose"|39.739236|-104.990251
 "UnlocksCodes.com "|53.408371|-2.991573
-"Vocal (drappby, inc.)|zzz|37.77493|-122.419416
+"Vocal (drappby, inc.)"|37.77493|-122.419416
 "Chicago Works"|41.878114|-87.629798
 "Clearway Health Solutions"|42.360083|-71.05888
 "Wild Bikers Motorcycles"|37.09024|-95.712891
@@ -2242,7 +2242,7 @@ Name|LAT|LON
 "InvenQuery"|39.099727|-94.578567
 "XtraDot Technologies"|6.524379|3.379206
 "CityBric"|23.12911|113.264385
-"Sepior (KMaaS Aps)|zzz|55.676097|12.568337
+"Sepior (KMaaS Aps)"|55.676097|12.568337
 "Confluence "|20.593684|78.96288
 "PicGhost"|26.820553|30.802498
 "Skylight Technologies"|9.076479|7.398574
@@ -2251,14 +2251,14 @@ Name|LAT|LON
 "Kai Yoga"|32.715738|-117.161084
 "Swarmbooks"|33.748995|-84.387982
 "El Bazar Mx"|19.432608|-99.133208
-"DogDate|zzz|-30.034647|-51.217658
+"DogDate"|-30.034647|-51.217658
 "BevRAGE Group Int'l"|33.748995|-84.387982
 "Together"|55.755826|37.6173
 "TIPTOPTEMP"|44.977753|-93.265011
 "Software Progressions"|37.910078|-122.065182
 "AdviceGrab"|12.971599|77.594563
 "Thanks, Bro"|40.712784|-74.005941
-"KZN Southdown Farming|zzz|-29.87479|30.277399
+"KZN Southdown Farming"|-29.87479|30.277399
 "Source Pro Solutions"|42.48059|-83.475491
 "Grip Clutch"|34.052234|-118.243685
 "SevenForty Pictures"|34.052234|-118.243685
@@ -2292,16 +2292,16 @@ Name|LAT|LON
 "TADE"|19.432608|-99.133208
 "S.WILL Industrial"|22.543099|114.057868
 "LTTnews"|35.125801|-117.985904
-"TTT Investment Pty|zzz|-33.867487|151.20699
+"TTT Investment Pty"|-33.867487|151.20699
 "VINKD"|19.432608|-99.133208
 "Our Wicked Lady"|40.712784|-74.005941
 "Your Adoption Finance Coach"|39.099727|-94.578567
 "Walltik"|41.385064|2.173403
 "InfoPye"|35.79154|-78.781117
 "Squarecade"|33.214841|-97.133068
-"Hyper Peer|zzz|-33.924868|18.424055
-"The Paleo Market|zzz|-31.953513|115.857047
-"Maze|zzz|-33.867487|151.20699
+"Hyper Peer"|-33.924868|18.424055
+"The Paleo Market"|-31.953513|115.857047
+"Maze"|-33.867487|151.20699
 "BestCarShops.com"|26.368306|-80.128932
 "Eventpig "|51.507351|-0.127758
 "Verifeed"|38.907192|-77.036871
@@ -2309,7 +2309,7 @@ Name|LAT|LON
 "SeniorMove.com"|39.739236|-104.990251
 "Happy Hourz Daiquiri Bar"|25.76168|-80.19179
 "Smart Car"|42.878213|-8.544844
-"iBoost Internet Marketing Company|zzz|-30.559482|22.937506
+"iBoost Internet Marketing Company"|-30.559482|22.937506
 "coursewave"|19.075984|72.877656
 "Dream Energies SRL of CV"|20.659699|-103.349609
 "Kingaroo Pouche"|41.878114|-87.629798
@@ -2317,7 +2317,7 @@ Name|LAT|LON
 "Thunderbird Productions"|32.776664|-96.796988
 "Mythos360"|41.385064|2.173403
 "Berry Brains"|51.507351|-0.127758
-"Southern Swim Co.|zzz|36.06258|-94.157426
+"Southern Swim Co."|36.06258|-94.157426
 "Anaar"|51.92442|4.477733
 "Deals Of Scale "|32.776664|-96.796988
 "HYDROENERGY"|39.555732|21.767895
@@ -2340,7 +2340,7 @@ Name|LAT|LON
 "BetFlock"|55.008353|82.935733
 "BuckGet.com"|40.440625|-79.995886
 "Konnect Solutions "|37.338208|-121.886329
-"Pipa|zzz|-22.906847|-43.172896
+"Pipa"|-22.906847|-43.172896
 "BUENAMARCA.COM"|4.570868|-74.297333
 "Stolen Couch Games"|52.22917|5.166897
 "Mapidy"|51.507351|-0.127758
@@ -2374,7 +2374,7 @@ Name|LAT|LON
 "ARAZAS"|45.638728|-122.661486
 "Fitoop"|36.169941|-115.13983
 "Liaoning Qiwei Energy"|42.546307|124.038268
-"Yodh Power and Technologies Gr. Co.,Ltd.|zzz|22.396428|114.109497
+"Yodh Power and Technologies Gr. Co.,Ltd."|22.396428|114.109497
 "Nerover"|25.204849|55.270783
 "R2V"|37.45296|-122.181725
 "Bedscapes 4 Kidz"|39.729432|-104.83192
@@ -2412,7 +2412,7 @@ Name|LAT|LON
 "Anchor Fitness"|29.760427|-95.369803
 "Patron21"|41.878114|-87.629798
 "RoomScapeU"|30.438256|-84.280733
-"Blogo|zzz|-22.906847|-43.172896
+"Blogo"|-22.906847|-43.172896
 "Nice Landing Pictures"|39.739236|-104.990251
 "Complement Labs"|37.77493|-122.419416
 "Karangoo.com"|37.77493|-122.419416
@@ -2423,7 +2423,7 @@ Name|LAT|LON
 "Dreamme"|55.755826|37.6173
 "Astanza Laser"|29.760427|-95.369803
 "Fluency"|51.507351|-0.127758
-"ALLE - New Technologies in Life Sciences|zzz|-30.034647|-51.217658
+"ALLE - New Technologies in Life Sciences"|-30.034647|-51.217658
 "Redwing Business Intelligence"|55.378051|-3.435973
 "Sociobuddy"|28.613939|77.209021
 "Start-UP Blaster "|30.267153|-97.743061
@@ -2452,7 +2452,7 @@ Name|LAT|LON
 "W & W flip"|37.270702|-76.707457
 "Grow Games Interactive"|33.953349|-117.396156
 "Zobe Records"|40.141678|-75.192694
-"Karmadeeds|zzz|-33.867487|151.20699
+"Karmadeeds"|-33.867487|151.20699
 "Gent E-Cigarettes"|37.77493|-122.419416
 "MONROWE Media"|40.712784|-74.005941
 "Berkley Binary Options Trading"|40.440625|-79.995886
@@ -2465,11 +2465,11 @@ Name|LAT|LON
 "Gym Company"|51.919438|19.145136
 "Movie Clock"|25.76168|-80.19179
 "Masthead Studios"|42.697708|23.321868
-"provulo|zzz|-26.204103|28.047305
+"provulo"|-26.204103|28.047305
 "datavisual"|40.712784|-74.005941
 "Labyrinth.io"|17.385044|78.486671
 "TheP3K"|25.76168|-80.19179
-"VHSYS|zzz|-25.252089|-52.021542
+"VHSYS"|-25.252089|-52.021542
 "2willo"|36.169941|-115.13983
 "3DiVi Company"|37.36883|-122.03635
 "Tvisi Algo Systems"|19.075984|72.877656
@@ -2508,7 +2508,7 @@ Name|LAT|LON
 "KuKaZi"|34.052234|-118.243685
 "Spidvid - Making Videos Together"|43.653226|-79.383184
 "Art Media Production"|58.52557|31.274193
-"AduGame|zzz|-0.789275|113.921327
+"AduGame"|-0.789275|113.921327
 "Bail Bond Technologies"|33.865103|-84.336592
 "OCIN"|30.04442|31.235712
 "hCentive"|38.958631|-77.357003
@@ -2530,7 +2530,7 @@ Name|LAT|LON
 "Mega Auto Center"|12.16957|-68.99002
 "PROFFINANCE"|50.4501|30.5234
 "ShowMeMenu"|37.54827|-121.988572
-"nanopop|zzz|-22.906847|-43.172896
+"nanopop"|-22.906847|-43.172896
 "Sherman3D"|35.689488|139.691706
 "Lunch Time"|15.120142|-23.605172
 "Digital Dialogue"|36.204824|138.252924
@@ -2582,21 +2582,21 @@ Name|LAT|LON
 "Brisk"|51.507351|-0.127758
 "Z89 Game Dev"|38.722252|-9.139337
 "Fort Portal Properties"|0.654626|30.280117
-"RHEIA|zzz|-6.917464|107.619123
+"RHEIA"|-6.917464|107.619123
 "SellSimple"|34.052234|-118.243685
 "Rent The Dress"|40.760779|-111.891047
 "TuneBreaker"|51.507351|-0.127758
-"Kartenz Studios|zzz|-6.208763|106.845599
-"SuperFamily|zzz|-27.595378|-48.54805
+"Kartenz Studios"|-6.208763|106.845599
+"SuperFamily"|-27.595378|-48.54805
 "Instapitch"|33.748995|-84.387982
-"Capricorn Marine Exploration|zzz|-33.924868|18.424055
+"Capricorn Marine Exploration"|-33.924868|18.424055
 "MOZAIK Learning"|37.77493|-122.419416
 "Kickstart Smart Alarm Designs"|27.498928|-82.574819
 "OCTGN"|47.925257|-97.032855
 "Pixel Academy"|40.712784|-74.005941
 "FuzeTap"|9.101179|-79.402864
 "magNifi"|22.396428|114.109497
-"Karabo Manne|zzz|-25.747868|28.229271
+"Karabo Manne"|-25.747868|28.229271
 "Big House Studio"|37.77493|-122.419416
 "TripThirsty"|12.971599|77.594563
 "DoYouRemember "|25.76168|-80.19179
@@ -2613,7 +2613,7 @@ Name|LAT|LON
 "Vudubu"|41.008238|28.978359
 "mylap.se"|54.687156|25.279651
 "Puzzle World Games"|34.052234|-118.243685
-"Times Twenty Five (LeanCiti Ltd)|zzz|52.520007|13.404954
+"Times Twenty Five (LeanCiti Ltd)"|52.520007|13.404954
 "31rainfall Interactive"|30.604981|74.255787
 "Petcarebridge"|59.436961|24.753575
 "Joy & Revelry"|37.77493|-122.419416
@@ -2633,7 +2633,7 @@ Name|LAT|LON
 "BLUWIRED"|37.77493|-122.419416
 "Tawssela Express"|30.04442|31.235712
 "Proposify"|53.72702|-1.85754
-"David Clark Group P/L|zzz|-27.471011|153.023449
+"David Clark Group P/L"|-27.471011|153.023449
 "Politics Watch"|45.42153|-75.697193
 "CollabMate"|45.815011|15.981919
 "myMedScore"|37.77493|-122.419416
@@ -2673,7 +2673,7 @@ Name|LAT|LON
 "UNBOUND"|37.77493|-122.419416
 "AutoFileMove"|26.820553|30.802498
 "Control My ADHD"|38.040584|-84.503716
-"Indie on Air!|zzz|37.971559|-87.57109
+"Indie on Air!"|37.971559|-87.57109
 "5 O'Clock Brewing Company"|33.748995|-84.387982
 "ZigTraka Solutions"|18.52043|73.856744
 "Tried & True Tutoring"|34.052234|-118.243685
@@ -2697,7 +2697,7 @@ Name|LAT|LON
 "Stealth Reality TV Series"|37.09024|-95.712891
 "PlenSat"|33.426973|-117.611992
 "Bustr"|40.712784|-74.005941
-"White Olive Sdn. Bhd.|zzz|3.139003|101.686855
+"White Olive Sdn. Bhd."|3.139003|101.686855
 "Replicat"|19.432608|-99.133208
 "BrandGuard Software"|32.776664|-96.796988
 "Sippify"|37.338208|-121.886329
@@ -2753,7 +2753,7 @@ Name|LAT|LON
 "BiG, Believe in God"|39.739236|-104.990251
 "Instamour"|39.952584|-75.165222
 "Bizlifter"|34.052234|-118.243685
-"WhyAsk.Us?|zzz|37.77493|-122.419416
+"WhyAsk.Us?"|37.77493|-122.419416
 "Estateya"|32.0853|34.781768
 "Qodevault by Qode Media"|43.653226|-79.383184
 "AKBD- Affordable Kitchens & Bath Design"|40.712784|-74.005941
@@ -2766,7 +2766,7 @@ Name|LAT|LON
 "Mobile Experience "|47.482878|-122.217066
 "Absly"|27.751828|-82.626734
 "Rawbots"|13.586856|-88.7494
-"Bookmarc|zzz|-33.867487|151.20699
+"Bookmarc"|-33.867487|151.20699
 "maperia"|54.352025|18.646638
 "IMAGINIX GAMES"|43.653226|-79.383184
 "The Auto Vault Miami"|25.76168|-80.19179
@@ -2829,7 +2829,7 @@ Name|LAT|LON
 "VisioTech Solutions"|29.395722|71.683333
 "GCP Solar"|22.396428|114.109497
 "Date Dog Lovers"|34.052234|-118.243685
-"Cacho.la|zzz|-23.55052|-46.633309
+"Cacho.la"|-23.55052|-46.633309
 "Microlaunchers"|36.169941|-115.13983
 "B FROG"|35.125801|-117.985904
 "Zuldi"|36.169941|-115.13983
@@ -2869,7 +2869,7 @@ Name|LAT|LON
 "Big2 Game"|1.352083|103.819836
 "Sportifiq"|46.056947|14.505751
 "RapidEngage"|32.715738|-117.161084
-"Academe (Acade.me)|zzz|26.368306|-80.128932
+"Academe (Acade.me)"|26.368306|-80.128932
 "Shopnix"|12.971599|77.594563
 "Physician Relocation Specialists"|45.523062|-122.676482
 "Meople.Net"|37.386052|-122.083851
@@ -2877,7 +2877,7 @@ Name|LAT|LON
 "VidSocially"|33.683947|-117.794694
 "MEW Productions"|51.507351|-0.127758
 "Virtual Agora"|41.878114|-87.629798
-"Spectrul|zzz|-33.867487|151.20699
+"Spectrul"|-33.867487|151.20699
 "ZipCircle "|12.971599|77.594563
 "Kingston 8 Cyber and Game Center"|46.003823|-112.534778
 "Medlio"|35.994033|-78.898619
@@ -2911,11 +2911,11 @@ Name|LAT|LON
 "theStudentranking"|50.775346|6.083887
 "Senndex"|33.748995|-84.387982
 "SnagMobile"|42.652579|-73.756232
-"inGroove (Formerly Darwin360)|zzz|40.760779|-111.891047
+"inGroove (Formerly Darwin360)"|40.760779|-111.891047
 "QuickSolar"|29.951066|-90.071532
 "Bizantu"|39.739236|-104.990251
-"VoiceClub|zzz|-34.603684|-58.381559
-"ConnectTalent |zzz|-33.867487|151.20699
+"VoiceClub"|-34.603684|-58.381559
+"ConnectTalent "|-33.867487|151.20699
 "Wordinaire"|34.052234|-118.243685
 "Jesse J Wilkerson & Associates"|34.503439|-82.650133
 "Chasm.io"|30.267153|-97.743061
@@ -2923,7 +2923,7 @@ Name|LAT|LON
 "SPEAKIPLAY SAS"|48.856614|2.352222
 "LPI"|28.538336|-81.379236
 "Diplomiya"|61.52401|105.318756
-"DigitalSorbet|zzz|-33.867487|151.20699
+"DigitalSorbet"|-33.867487|151.20699
 "Parent Child Interactive "|45.523062|-122.676482
 "Contractor Tools Online"|39.961176|-82.998794
 "AirPersons"|40.416775|-3.70379
@@ -2933,7 +2933,7 @@ Name|LAT|LON
 "Mobex"|27.950575|-82.457178
 "Griot Enterprises"|41.878114|-87.629798
 "10Gen Jobs"|28.613939|77.209021
-"DreamsApp|zzz|-19.916681|-43.934493
+"DreamsApp"|-19.916681|-43.934493
 "Exiles "|37.77493|-122.419416
 "Lemonade Stand"|41.878114|-87.629798
 "Pub Anywhere"|53.349805|-6.26031
@@ -2955,7 +2955,7 @@ Name|LAT|LON
 "sleek-geek"|37.804364|-122.271114
 "PubShifter"|33.835293|-117.914504
 "Tutors Nirvana"|48.428421|-123.365644
-"Poa Em Transito|zzz|-30.034647|-51.217658
+"Poa Em Transito"|-30.034647|-51.217658
 "Value This Now"|37.910078|-122.065182
 "Sherman Latimer"|28.538336|-81.379236
 "Dibs"|35.994033|-78.898619
@@ -2973,7 +2973,7 @@ Name|LAT|LON
 "Molly's Milk Truck"|40.743991|-74.032363
 "MorningBet"|45.748872|21.208679
 "CorCardia Group"|44.977753|-93.265011
-"CardioCare. Heart Health Tech|zzz|-14.235004|-51.92528
+"CardioCare. Heart Health Tech"|-14.235004|-51.92528
 "dineout"|28.613939|77.209021
 "Athlete.com"|40.646062|-111.497973
 "Generous"|45.523062|-122.676482
@@ -3000,7 +3000,7 @@ Name|LAT|LON
 "PaletteApp"|41.878114|-87.629798
 "Sugar Knife "|37.804364|-122.271114
 "Skwibl"|50.4501|30.5234
-"burufly|zzz|-0.789275|113.921327
+"burufly"|-0.789275|113.921327
 "MATCHPOINT"|34.052234|-118.243685
 "DomainPaid"|40.712784|-74.005941
 "TiQiT"|37.804364|-122.271114
@@ -3011,9 +3011,9 @@ Name|LAT|LON
 "Swably"|37.77493|-122.419416
 "Green Design"|44.786568|20.448922
 "AppXen"|34.052234|-118.243685
-"Where's the Run!?!?!|zzz|38.788106|-90.497436
+"Where's the Run!?!?!"|38.788106|-90.497436
 "Minute List It"|41.878114|-87.629798
-"ClikPals|zzz|-1.292066|36.821946
+"ClikPals"|-1.292066|36.821946
 "Thriver"|37.77493|-122.419416
 "Weekend Sherpa"|37.77493|-122.419416
 "Qliz"|45.42153|-75.697193
@@ -3030,15 +3030,15 @@ Name|LAT|LON
 "Spout Software"|30.267153|-97.743061
 "Infinite Monkeys / AppMakr"|40.712784|-74.005941
 "4TheLocals"|36.169941|-115.13983
-"Es Noticia!|zzz|-34.603684|-58.381559
-"Viapool|zzz|-34.603684|-58.381559
+"Es Noticia!"|-34.603684|-58.381559
+"Viapool"|-34.603684|-58.381559
 "Vevue "|36.975228|-121.953293
 "RentalCompare"|34.052234|-118.243685
 "LUKnFEED"|40.712784|-74.005941
 "PositionClick"|42.360083|-71.05888
 "Lingerie Planet"|42.53869|-71.046564
 "Beer Bites"|43.071755|-70.762553
-"Horoscorpio|zzz|-28.01726|153.425699
+"Horoscorpio"|-28.01726|153.425699
 "CosmoMD"|33.641132|-117.918669
 "YALLDO"|37.507159|-122.260522
 "MobileMediaOne"|34.052234|-118.243685
@@ -3063,7 +3063,7 @@ Name|LAT|LON
 "IUN"|40.712784|-74.005941
 "GoGoHealth"|37.77493|-122.419416
 "Listnerd"|37.441883|-122.143019
-"Appetite+|zzz|40.712784|-74.005941
+"Appetite+"|40.712784|-74.005941
 "Fosmo Med"|37.562992|-122.325525
 "Extremal Film Partners"|34.052234|-118.243685
 "Medieval World International"|40.58526|-105.084423
@@ -3075,14 +3075,14 @@ Name|LAT|LON
 "FARJHO"|33.61891|-117.928947
 "Freddiction"|34.052234|-118.243685
 "Chiching"|37.77493|-122.419416
-"SandBox (Let's Play)|zzz|34.052234|-118.243685
+"SandBox (Let's Play)"|34.052234|-118.243685
 "Social27"|47.60621|-122.332071
 "MobileRQ"|45.523062|-122.676482
-"Brand(ark)|zzz|45.638728|-122.661486
+"Brand(ark)"|45.638728|-122.661486
 "Avatar Snowskates"|53.726668|-127.647621
-"Real Estate Financial Modeling (REFM)|zzz|40.712784|-74.005941
+"Real Estate Financial Modeling (REFM)"|40.712784|-74.005941
 "Pocket Knife Software"|30.505198|-97.820289
-"MultiDine, Touch. Taste. Discover.|zzz|32.0853|34.781768
+"MultiDine, Touch. Taste. Discover."|32.0853|34.781768
 "TaxiMonger"|3.139003|101.686855
 "Azigo"|42.360083|-71.05888
 "Impulcity"|39.103118|-84.51202
@@ -3090,7 +3090,7 @@ Name|LAT|LON
 "WOISIO"|41.008238|28.978359
 "TravelSite.com"|37.77493|-122.419416
 "Niqotin"|13.08268|80.270718
-"Mate of Mine|zzz|-33.867487|151.20699
+"Mate of Mine"|-33.867487|151.20699
 "GigDog"|38.029306|-78.476678
 "Qnova Health "|33.748995|-84.387982
 "Teachmeo"|34.052234|-118.243685
@@ -3100,7 +3100,7 @@ Name|LAT|LON
 "Yokal Sports"|34.052234|-118.243685
 "Traders Circle"|40.712784|-74.005941
 "Apptimate"|55.70466|13.191007
-"Nomadintel (previously Startup Nomads)|zzz|52.520007|13.404954
+"Nomadintel (previously Startup Nomads)"|52.520007|13.404954
 "CloudFunded"|37.77493|-122.419416
 "The Porter Group"|40.712784|-74.005941
 "Kermdinger Studios"|37.485215|-122.236355
@@ -3127,7 +3127,7 @@ Name|LAT|LON
 "Pixifood"|31.230416|121.473701
 "set a time to talk"|34.052234|-118.243685
 "BarBlackBook "|34.052234|-118.243685
-"Dextr|zzz|-27.471011|153.023449
+"Dextr"|-27.471011|153.023449
 "CareLinx"|37.77493|-122.419416
 "Tribewanted"|43.305573|12.327868
 "iGenApps"|18.466334|-66.105722
@@ -3144,7 +3144,7 @@ Name|LAT|LON
 "Frostbox"|53.381129|-1.470085
 "Never Work"|40.712784|-74.005941
 "SME"|40.712784|-74.005941
-"Primpt-|zzz|37.77493|-122.419416
+"Primpt-"|37.77493|-122.419416
 "CipherGraph Networks"|37.338208|-121.886329
 "MonPets"|31.046051|34.851612
 "MatchUpBox"|42.360083|-71.05888
@@ -3157,7 +3157,7 @@ Name|LAT|LON
 "Oneloudr"|36.162664|-86.781602
 "Bloonder"|40.416775|-3.70379
 "Lifespan® Seminar"|34.052234|-118.243685
-"ZOONY|zzz|-14.235004|-51.92528
+"ZOONY"|-14.235004|-51.92528
 "RocketStart"|50.4501|30.5234
 "OutTrippin"|37.77493|-122.419416
 "BestBuzz"|32.776664|-96.796988
@@ -3169,9 +3169,9 @@ Name|LAT|LON
 "Vponz"|9.101179|-79.402864
 "andara"|37.77493|-122.419416
 "Rental Kharma"|39.739236|-104.990251
-"Alugar Chacaras|zzz|-23.55052|-46.633309
+"Alugar Chacaras"|-23.55052|-46.633309
 "NYFP"|40.712784|-74.005941
-"iFind Patform|zzz|-14.235004|-51.92528
+"iFind Patform"|-14.235004|-51.92528
 "Jipio"|51.92442|4.477733
 "SafeGuard Guaranty"|35.77959|-78.638179
 "HomeZada"|38.677959|-121.176058
@@ -3187,7 +3187,7 @@ Name|LAT|LON
 "Connecticut Cookie Company"|41.186548|-73.195177
 "TRAIL"|37.77493|-122.419416
 "Hagglys"|40.712784|-74.005941
-"Widbook|zzz|-23.55052|-46.633309
+"Widbook"|-23.55052|-46.633309
 "Avuá Cachaça"|40.712784|-74.005941
 "CloudeAssurance"|37.09024|-95.712891
 "Poikos"|52.370216|4.895168
@@ -3210,7 +3210,7 @@ Name|LAT|LON
 "Goblinworks"|47.60621|-122.332071
 "Bmark"|32.0853|34.781768
 "XOO Network"|45.638728|-122.661486
-"LIFEPROJECT METHOD|zzz|-34.603684|-58.381559
+"LIFEPROJECT METHOD"|-34.603684|-58.381559
 "Follr"|37.77493|-122.419416
 "KNO Clothing"|39.952584|-75.165222
 "WorderLang"|31.046051|34.851612
@@ -3244,7 +3244,7 @@ Name|LAT|LON
 "Achraf52"|31.791702|-7.09262
 "Toogethr"|52.370216|4.895168
 "RealtyBaron"|32.941236|-97.134178
-"TYSON|zzz|-25.274398|133.775136
+"TYSON"|-25.274398|133.775136
 "StoppedAt"|37.77493|-122.419416
 "RHT SpectraSafe"|37.338208|-121.886329
 "CloudPrime QuickDrop™ "|37.77493|-122.419416
@@ -3267,7 +3267,7 @@ Name|LAT|LON
 "JobPage"|51.507351|-0.127758
 "Liberty Hair Health and Beauty"|51.507351|-0.127758
 "Artwise"|33.77005|-118.193739
-"ONETRUEGEM Photovoltaics (OTGP)|zzz|38.907192|-77.036871
+"ONETRUEGEM Photovoltaics (OTGP)"|38.907192|-77.036871
 "Confidential"|1.352083|103.819836
 "Pingwyn"|42.360083|-71.05888
 "Magister Technologies"|32.715738|-117.161084
@@ -3287,3 +3287,4 @@ Name|LAT|LON
 "A Greater Town"|40.825901|-74.209005
 "Hip Chicas"|40.712784|-74.005941
 "Charitable Checkout"|40.712784|-74.005941
+"
