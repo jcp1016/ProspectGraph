@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<!-- Generated with Popoto.js Configurator 1.0 -->
+<!-- Generated with Popoto.js Configurator 1.0 and Customized by Sam Guleff -->
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <title>Popoto Search</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
     <link rel="stylesheet" href="css/popoto.min.css">
 </head>
 <body class="ppt-body">
@@ -34,11 +41,34 @@
     <div id="popoto-results" class="ppt-container-results">
         <!-- Results will be generated here -->
     </div>
+	<div id="myMap" class="ppt-myMap">
+		<!-- My Map will go here -->
+	</div>
+	
 </section>
+
 <script src="js/jquery-2.1.0.min.js" charset="utf-8"></script>
 <script src="js/d3.v3.min.js" charset="utf-8"></script>
 <script src="js/popoto.min.js" charset="utf-8"></script>
 <script>
+
+//Globals
+
+var MyPins= {}; 
+
+// Mapping Script
+//L.mapbox.accessToken = 'pk.eyJ1Ijoic2d1bGVmZiIsImEiOiJjaWk2dXB4OGIwMXZmdG9rZnFndzdheWR1In0.QSvi7ri0fi9Mb4t4s2YJoQ';
+//var map = L.mapbox.map('myMap', 'mapbox.streets')
+//    .setView([40, -74.50], 9);
+	
+L.mapbox.accessToken = 'pk.eyJ1Ijoic2d1bGVmZiIsImEiOiJjaWk2dXB4OGIwMXZmdG9rZnFndzdheWR1In0.QSvi7ri0fi9Mb4t4s2YJoQ';
+//var map = L.mapbox.map('myMap', 'mapbox.streets')
+//	.setView([38.91338, -77.03236], 16);
+
+var geocoder = L.mapbox.geocoder('mapbox.places'),
+    map = L.mapbox.map('myMap', 'examples.map-h67hf2ic');
+
+
 // URL used to access Neo4j REST API to execute queries.
 //popoto.rest.CYPHER_URL = "http://localhost:7474/db/data/transaction/commit";
 //popoto.rest.AUTHORIZATION = "Basic bmVvNGo6Rmlyc2EyMjYs";
@@ -100,7 +130,7 @@ popoto.provider.nodeProviders = {
 		parent: "Person",
         returnAttributes:["interestType"],
         constraintAttribute:"interestType",
-		"getDisplayType": function (node) {
+		getDisplayType: function (node) {
 			if (node.type === popoto.graph.node.NodeTypes.ROOT || node.type === popoto.graph.node.NodeTypes.CHOOSE) {
 			   return popoto.provider.NodeDisplayTypes.IMAGE;
 			   } else {
@@ -155,6 +185,7 @@ popoto.provider.nodeProviders = {
     },
     "Company":{
 		parent: "Person",
+		"children": ["RaisedFunds"],
         returnAttributes:["companyID", "dataQuality", "companyURL", "highConcept", "logoURL", "preMoneyValuation", "raisedAmount", "twitterURL", "linkedinURL", "raisingAmount", "companySize", "thumbURL", "crunchbaseURL", "Name", "primaryLocation"],
         constraintAttribute:"Name",
 		getDisplayType: function (node) {
@@ -186,7 +217,7 @@ popoto.provider.nodeProviders = {
 		parent: "Person",
         returnAttributes:["Name", "RoleId"],
         constraintAttribute:"Name",
-		"getDisplayType": function (node) {
+		getDisplayType: function (node) {
 			if (node.type === popoto.graph.node.NodeTypes.ROOT || node.type === popoto.graph.node.NodeTypes.CHOOSE) {
 				if (node.value !== undefined){
 					return popoto.provider.NodeDisplayTypes.TEXT;
@@ -217,7 +248,7 @@ popoto.provider.nodeProviders = {
 				}
 			}
 		},
-		"getTextValue": function (node) {
+		getTextValue: function (node) {
             var text;
 			
             if (node.type === popoto.graph.node.NodeTypes.VALUE) {
@@ -233,17 +264,134 @@ popoto.provider.nodeProviders = {
             return text.substring(0, 12);
         },
     },
+    "RaisedFunds":{
+		parent: "Company",
+        returnAttributes:["Name"],
+        constraintAttribute:"Name",
+				getDisplayType: function (node) {
+			if (node.type === popoto.graph.node.NodeTypes.ROOT || node.type === popoto.graph.node.NodeTypes.CHOOSE) {
+				if (node.value !== undefined){
+					return popoto.provider.NodeDisplayTypes.TEXT;
+				}  else {
+					return popoto.provider.NodeDisplayTypes.IMAGE;
+				}
+			   
+			   } else {
+					return popoto.provider.NodeDisplayTypes.TEXT;
+			   }           
+        },
+		getImagePath: function (node) {
+			if (node.type === popoto.graph.node.NodeTypes.VALUE) {
+				return node.attributes.logoURL;
+			} else {
+				if (node.value !== undefined) {
+					return "image/missing.png";
+				} else {
+					if (node.type === popoto.graph.node.NodeTypes.ROOT) {
+						return "image/followers.png";
+					} else {
+						if (node.count == 0) {
+							return "image/missing.png";
+						} else {
+							return "image/followers.png";
+						}
+					}
+				}
+			}
+		},
+		getTextValue: function (node) {
+            var text;
+			
+            if (node.type === popoto.graph.node.NodeTypes.VALUE) {
+                text = "" + node.attributes["Name"];
+            } else {
+                if (node.value === undefined) {
+                    text = node.label;
+                } else {
+                    text = "" + node.value.attributes["Name"];
+                }
+            }
+            // Text is truncated to avoid node overflow
+            return text.substring(0, 12);
+        }
+		
+    },
 };
 
 /**
-     * Add a listener on result received to update map.
-     */
+ * Add a listener on result received to update map.
+ */
+ var ASCYNC_DONE = false;
+ var xPin = -44;
+ var yPin = 70;
+ 
     popoto.result.onResultReceived(
 		function (resultObjects) {
-			window.alert("sometext");
-	
+			//acccessKey = "pk.eyJ1Ijoic2d1bGVmZiIsImEiOiJjaWk2dXB4OGIwMXZmdG9rZnFndzdheWR1In0.QSvi7ri0fi9Mb4t4s2YJoQ"
+
+			geocoder.query('Denver',DropPinOnMap)
+			
+			setTimeout(function(){ window.alert("Hello"); }, 3000);
+			
+			L.mapbox.featureLayer({
+				// this feature is in the GeoJSON format: see geojson.org
+				// for the full specification
+				type: 'Feature',
+				geometry: {
+					type: 'Point',
+					// coordinates here are in longitude, latitude order because
+					// x, y is the standard for GeoJSON and many formats
+					coordinates: [
+					  xPin,
+					  yPin
+					]
+				},
+				properties: {
+					title: 'Peregrine Espresso',
+					description: '1718 14th St NW, Washington, DC',
+					// one can customize markers by adding simplestyle properties
+					// https://www.mapbox.com/guides/an-open-platform/#simplestyle
+					'marker-size': 'large',
+					'marker-color': '#BE9A6B',
+					'marker-symbol': 'cafe'
+				}
+			}).addTo(map);
+
+			//geocoder.query('NYC', DropPinOnMap);
+				
 		}
     );
+	
+function DropPinOnMap(err, data) {
+
+	xPin = data.latlng[0];
+	yPin = data.latlng[1];
+    // The geocoder can return an area, like a city, or a
+    // point, like an address. Here we handle both cases,
+    // by fitting the map bounds to an area or zooming to a point.
+	//
+	ASCYNC_DONE = true;
+					
+	    if (data.lbounds) {
+        map.fitBounds(data.lbounds);
+    } else if (data.latlng) {
+        map.setView(xPin,yPin, 13);
+    }
+	
+	
+}
+
+	
+function showMap(err, data) {
+    // The geocoder can return an area, like a city, or a
+    // point, like an address. Here we handle both cases,
+    // by fitting the map bounds to an area or zooming to a point.
+    if (data.lbounds) {
+        map.fitBounds(data.lbounds);
+    } else if (data.latlng) {
+        map.setView([data.latlng[0], data.latlng[1]], 13);
+    }
+}
 
 
 popoto.result.onTotalResultCount(function (count) {

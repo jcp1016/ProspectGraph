@@ -1,0 +1,6 @@
+Name|LAT|LON
+"mytweetmark"|37.387474|-122.057543
+"Love Lab"|34.052234|-118.243685
+"Social Rewards"|34.052234|-118.243685
+"Hey Gorgeous!"|40.712784|-74.005941
+
