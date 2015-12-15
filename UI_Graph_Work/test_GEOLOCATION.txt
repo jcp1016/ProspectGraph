@@ -1,3 +1,4 @@
+Name|LAT|LON
 "Aachen"|50.775346|6.083887
 "Abu Dhabi"|24.299174|54.697277
 "Abu Jubayhah"|11.468654|31.228296
