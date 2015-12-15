@@ -77,7 +77,7 @@ popoto.rest.AUTHORIZATION = "Basic bmVvNGo6bmVvNGo=";
 LastNodeProperty = "Something"
 popoto.provider.nodeProviders = {
     "Person":{
-		"children": ["Role", "FollowerCount", "Interest", "Company"],
+		"children": ["Role", "FollowerCount", "Interest", "Company", "School"],
         returnAttributes:["followerCount", "personID", "Name", "Bio"],
         constraintAttribute:"personID",
 		"getDisplayType": function (node) {
@@ -179,6 +179,11 @@ popoto.provider.nodeProviders = {
 		
     },
     "Role":{
+		parent: "Person",
+        returnAttributes:["Name"],
+        constraintAttribute:"Name",
+    },
+	"School":{
 		parent: "Person",
         returnAttributes:["Name"],
         constraintAttribute:"Name",
