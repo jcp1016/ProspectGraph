@@ -1,12 +1,19 @@
-import json, os
+import nltk
+from nltk.stem import SnowballStemmer
+from html2text import html2text
+import json, os, sys
 from bottle import get, post, route, run, debug, request, response, static_file, template
-import json
-#from py2neo import GraphDatabaseService, CypherQuery
+from py2neo import Graph
+from site_keywords import fetch_html, clean_html, compute_fdist
+from synonyms import get_synonyms
 
-#run(reloader = True)
+reload(sys)
+sys.setdefaultencoding('utf8')
+
+snowball_stemmer = SnowballStemmer("english")
 
 # set connection information (defaults to http://localhost:7474/db/data/)
-#graph_db = GraphDatabaseService()
+graph_db = Graph()
 
 @route('/js/<filename>')
 def js_static(filename):
@@ -22,20 +29,55 @@ def img_static(filename):
 
 @route('/')
 def index():
-    return template("index.tpl", url='')
+    return template("index.tpl", data='', keywords='', orgname='')
 
 @route('/', method='POST')
-def submit(url=''):
+def submit(data='', keywords=''):
     orgname = request.forms.get('orgname').strip().lower()
-    if orgname:
-        orgurl = "http://www." + orgname + ".org"
-        #raw_items = os.system("python site_keywords.py " + orgurl + " 20")
+    keywords = []
+    results = []
+    if not orgname:
+        keywords.append("Error: please enter an organization name.")
     else:
-        orgurl = "Error: please enter an organization name."
-    return template("index.tpl", url=orgurl)
+        N = 10
+        url = "http://www." + orgname + ".org"
+        html_text = fetch_html(url)
+        if html_text == -1:
+            keywords.append("Sorry, this site could not be accessed.")
+        else:
+            html_text  = clean_html(html_text)
+            plain_text = html2text(html_text)
+            tokens = nltk.word_tokenize(plain_text)
+            wordfreqs = compute_fdist(tokens)
+            more_words = []
+            for word, freq in wordfreqs.most_common(N):
+                word = word.strip()
+                if freq > 1:
+                    keywords.append(word)
+                    stem = snowball_stemmer.stem(word)
+                    if stem and stem != word:
+                        keywords.append(stem)
+                    #more_words = get_synonyms(word)
+                    #if more_words:
+                    #    keywords.extend(more_words)
+            if len(keywords) > 0:
+                results = graph_db.cypher.execute( \
+                    "MATCH (p:Person)-[:LIKES]->(i:Interest), " \
+                    "      (p)-[r:HAS_ROLE]->(c:Company) " \
+                    "WHERE i.interestType in {keywords} " \
+                    "RETURN DISTINCT p.Name as person_name, " \
+                    "                p.Bio as bio, " \
+                    "                r.roleType as role, " \
+                    "                c.Name as company_name, " \
+                    "                c.raisedAmount as funds, " \
+                    "                c.companySize as size, " \
+                    "                c.companyURL as website, " \
+                    "                c.primaryLocation as location " \
+                    "ORDER BY c.raisedAmount DESC", {"keywords": keywords})
+            else:
+                results = "Sorry, no keywords found on this site."
+             
+    return template("index.tpl", data=results, keywords=keywords, orgname=orgname)
                           
-if os.system('whoami') == 'Columbia':
-    run(host='10.0.0.8', port=8080, debug=False)
-else:
-    run(host='localhost', port=8080, debug=False)
-
+#run(host='10.0.0.8', port=8080, debug=False)
+run(host='localhost', port=8080, debug=False)

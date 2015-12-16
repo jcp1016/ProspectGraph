@@ -9,11 +9,15 @@
 # Date  :  Dec 2015
 #---------------------------------------------------------------------
 import re, nltk, urllib2, sys, mechanize
+from nltk import SnowballStemmer
 import cookielib
 from html2text import html2text 
 from nltk.corpus import stopwords
 from nltk.corpus import wordnet as wn
 from nltk.stem import WordNetLemmatizer
+
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 def fetch_html(url_string):
     cj = cookielib.LWPCookieJar()
@@ -97,11 +101,12 @@ def avoid_truncated_words(i, some_text):
 def main():
     urlfile = open(sys.argv[1])
     outfile = open(sys.argv[2], 'w')
+    snowball_stemmer = SnowballStemmer("english")
 
     header = "personID|Interest\n"
     outfile.write(header)
 
-    valid_words = ['animal', 'arts', 'culture', 'civil', 'rights', 'social', 'action',
+    valid_words = ['animal', 'arts', 'culture', 'children', 'civil', 'rights', 'social', 
                    'disaster', 'humanitarian', 'economic', 'empowerment',
                    'education', 'environment', 'health', 'human', 'politics', 'poverty',
                    'science', 'technology', 'social', 'services']
@@ -141,9 +146,14 @@ def main():
             keywords = lemmatize(tokens)
             for k in keywords:
                 if k in valid_words:
-                    #for s in get_synonyms(k):
                     record = personID + "|" + k + "\n"
                     outfile.write(record.encode('utf8', errors='ignore'))
+                    stem = snowball_stemmer.stem(k)
+                    record = personID + "|" + stem + "\n"
+                    outfile.write(record.encode('utf8', errors='ignore'))
+                    #for s in get_synonyms(k):
+                    #    record = personID + "|" + s + "\n"
+                    #    outfile.write(record.encode('utf8', errors='ignore'))
 
     urlfile.close()
     outfile.close()

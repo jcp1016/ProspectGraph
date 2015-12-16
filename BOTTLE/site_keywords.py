@@ -1,10 +1,7 @@
 #-----------------------------------------------------------------
 # site_keywords.py
 #
-# Desc  :  Finds important keywords for a URL.  Takes two args: 
-#
-# 1) a fully formed URL, e.g. http://habitat.org
-# 2) an integer specifying the number of keywords to return, e.g. 20
+# Desc  :  Functions to capture and clean keywords for a URL    
 #
 # Author:  Janet Prumachuk
 # Date  :  Dec 2015
@@ -22,7 +19,6 @@ def fetch_html(url_string):
         raw_html = br.open(url_string).read().decode('utf-8')
         return(raw_html) 
     except:
-        print "Sorry, this site could not be accessed.\n"
         return(-1)
 
 def clean_html(html):
@@ -88,28 +84,3 @@ def compute_fdist(tokens):
     # Calculate frequency distribution
     fdist = nltk.FreqDist(new_text)
     return(fdist)
-
-
-def main():
-    url = str( sys.argv[1] )
-    N = int( sys.argv[2] )
-    
-    #print( "Fetching " + url + "...")
- 
-    html_text  = fetch_html(url)
-    if html_text == -1:
-        return()
-
-    html_text  = clean_html(html_text)
-    plain_text = html2text(html_text)
-    tokens     = nltk.word_tokenize(plain_text)
-    keywords   = compute_fdist(tokens)
-
-    # Show the top n words
-    #print( "Top " + str(N) + " words found for " + url + ":")
-    for word, freq in keywords.most_common(N):
-        print ('%s, %d' % (word, freq)).encode('utf-8')
-
-
-if __name__ == '__main__':
-    main()

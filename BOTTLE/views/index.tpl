@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- The above 3 meta tags *must* come first in the head; 
+         any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
@@ -28,7 +29,7 @@
   </head>
 
   <body>
-
+    <!-- Top navigation bar common to all pages -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -44,68 +45,85 @@
         <div id="navbar" class="navbar-collapse collapse">
           <!-- <form class="navbar-form navbar-right"> -->
           <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#graph">Graph</a></li>
-              <li><a href="#project">Project</a></li>
-              <li><a href="#team">Team</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#graph">Graph</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#team">Team</a></li>
           </ul>
-        </div><!--/navbar-collapse -->
-      </div><!--/container -->
+        </div><!-- end of navbar-collapse -->
+      </div><!-- end of navbar container -->
     </nav>
 
+    <!-- Graphical area at top of home page, includes the input form -->
     <div class="jumbotron">
       <div class="container">
         <div class="page-header"> 
-        <div id="tagline">Find angels who care about your organization's mission.<br class="clear" /></div>
+          <div id="tagline">
+            Find angels who care about your organization's mission.
+          </div>
           <form class="search" action="/" role="form" id="get_org_form" method="post">
             <div class="input-group input-group-lg">
-                <span class="input-group-addon">http://www.</span>
-                <input type="text" name="orgname" class="form-control input-lg" placeholder="orgname" autofocus>
-                <span class="input-group-addon">.org</span>
-            </div><br class="clear" />
+              <span class="input-group-addon">http://www.</span>
+              <input type="text" name="orgname" class="form-control input-lg" 
+                     placeholder="orgname" autofocus value={{orgname}} >
+              <span class="input-group-addon">.org</span>
+            </div> <!-- end of input group -->
+            <br class="clear" />
             <button type="submit" class="btn btn-info btn-lg center-block">Search</button>&nbsp;
           </form>
-        </div><!-- page-header -->
-      </div><!-- container -->
-    </div><!-- jumbotron -->
+        </div><!-- end of page-header -->
+        <p> Keywords: {{keywords}} </p>
+      </div><!-- end of jumbotron container -->
+    </div><!-- end of jumbotron -->
 
-    <p>{{url}}</p> 
-    %if url != '' and url[0:5] != 'Error':
+    <!-- Data output area -->
+    <!-- <p>{{data}}</p> -->
+    <!-- Load elements into a 2 dimenstional list -->
+    %matrix = ([])
+    %if data != '' and data[0:5] != 'Error' and data[0:5] != 'Sorry':
+        %for row in data:
+            %matrix.append(row)
+        %end
+    %end
+    <!-- <p>{{matrix}}</p> -->
 
     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
+    <!-- Each row will display 3 people -->
+    %j = 0
+    <div class="row">
+    %for row in matrix:
+        %if j % 3  == 0 : 
+            </div> <!-- end of row -->
+            <div class="row">
+        %end
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-
+            <div class="panel panel-default">
+                <div class="panel-heading"><b>{{matrix[j][0]}}</b></div>
+                <div class="panel-body"><p>{{row[1]}}</p></div>
+                <table class="table">
+                    table goes here...
+                </table>
+            </div> <!-- end of panel -->
+            <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+        </div> <!-- end of column -->
+        %j += 1
     %end
-      <hr>
+    </div> <!-- end of last row -->
+    </div> <!-- end of data output area container -->
+    <hr>
 
-      <footer>
-        <p>&copy; 2015 Corlefnet</p>
-      </footer>
+    <!-- Static footer -->
+    <div class="container">
+      <footer><p>&copy; 2015 Corlefnet</p></footer>
     </div> <!-- /container -->
 
-
     <!-- Bootstrap core JavaScript
-    ================================================== -->
+      ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')
+    </script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
