@@ -103,7 +103,8 @@
                 <div class="table-responsive">
                     <table class="table table-bordered table-condensed">
                         <tr>
-                          <td>{{row[2]}} at <a href={{row[6]}}>{{row[3]}}</a></td>
+                          <td>{{row[2]}} at <a href={{row[6]}} target="_blank">
+                                               {{row[3]}}</a></td>
                         </tr>
                         <tr>
                           <th>Company Size</th>
