@@ -77,7 +77,6 @@
     </div><!-- end of jumbotron -->
 
     <!-- Data output area -->
-    <!-- <p>{{data}}</p> -->
     <!-- Load elements into a 2 dimenstional list -->
     %matrix = ([])
     %if data != '' and data[0:5] != 'Error' and data[0:5] != 'Sorry':
@@ -85,7 +84,6 @@
             %matrix.append(row)
         %end
     %end
-    <!-- <p>{{matrix}}</p> -->
 
     <div class="container">
     <!-- Each row will display 3 people -->
@@ -98,11 +96,25 @@
         %end
         <div class="col-md-4">
             <div class="panel panel-default">
-                <div class="panel-heading"><b>{{matrix[j][0]}}</b></div>
+                <div class="panel-heading">
+                    <b>{{row[0]}} <br class="clear" /></b>
+                </div>
                 <div class="panel-body"><p>{{row[1]}}</p></div>
-                <table class="table">
-                    table goes here...
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-condensed">
+                        <tr>
+                          <td>{{row[2]}} at <a href={{row[6]}}>{{row[3]}}</a></td>
+                        </tr>
+                        <tr>
+                          <th>Company Size</th>
+                          <td>{{row[5]}}</td>
+                        </tr>
+                          <th>Funds Raised</th>
+                          %raised = "$" + str( format(row[4], ',d') )
+                          <td>{{raised}}</td>
+                        </tr>
+                    </table>
+                </div>
             </div> <!-- end of panel -->
             <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
         </div> <!-- end of column -->

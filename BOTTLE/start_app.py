@@ -1,11 +1,11 @@
 import nltk
 from nltk.stem import SnowballStemmer
 from html2text import html2text
-import json, os, sys
+import os, sys, re
 from bottle import get, post, route, run, debug, request, response, static_file, template
 from py2neo import Graph
 from site_keywords import fetch_html, clean_html, compute_fdist
-from synonyms import get_synonyms
+#from synonyms import get_synonyms
 
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -57,9 +57,7 @@ def submit(data='', keywords=''):
                     stem = snowball_stemmer.stem(word)
                     if stem and stem != word:
                         keywords.append(stem)
-                    #more_words = get_synonyms(word)
-                    #if more_words:
-                    #    keywords.extend(more_words)
+
             if len(keywords) > 0:
                 results = graph_db.cypher.execute( \
                     "MATCH (p:Person)-[:LIKES]->(i:Interest), " \
@@ -76,7 +74,6 @@ def submit(data='', keywords=''):
                     "ORDER BY c.raisedAmount DESC", {"keywords": keywords})
             else:
                 results = "Sorry, no keywords found on this site."
-             
     return template("index.tpl", data=results, keywords=keywords, orgname=orgname)
                           
 #run(host='10.0.0.8', port=8080, debug=False)
