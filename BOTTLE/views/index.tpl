@@ -99,7 +99,10 @@
                 <div class="panel-heading">
                     <b>{{row[0]}} <br class="clear" /></b>
                 </div>
-                <div class="panel-body"><p>{{row[1]}}</p></div>
+                <div class="panel-body">
+                    <p>{{row[1]}}</p>
+                    <p><a href={{row[8]}} target="_blank">LinkedIn Profile</a></p>
+                </div>
                 <div class="table-responsive">
                     <table class="table table-bordered table-condensed">
                         <tr>

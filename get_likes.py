@@ -2,8 +2,7 @@
 # get_likes.py
 #
 # Desc  :  Takes a file containing IDs and LinkedIn URLs.  Captures
-#          the interests section and writes IDs and interests to 
-#          a file.
+#          the interests and writes IDs and interests to a file.
 #
 # Author:  Janet Prumachuk
 # Date  :  Dec 2015
@@ -15,6 +14,7 @@ from html2text import html2text
 from nltk.corpus import stopwords
 from nltk.corpus import wordnet as wn
 from nltk.stem import WordNetLemmatizer
+from synonyms import get_custom_synonyms
 
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -28,7 +28,8 @@ def fetch_html(url_string):
     br.set_handle_redirect(True)
     br.set_handle_redirect(mechanize.HTTPRedirectHandler)
     br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
-    br.addheaders = [('User-agent', 'Mozilla/5.0')]
+    br.addheaders = [('User-agent', 'Mozilla/5.0 (X11; Linux x86_64) ' \
+                      'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36')]
     try:
         br.open(url_string)
     except:
@@ -62,10 +63,7 @@ def clean_html(html):
     cleaned = re.sub(r"  ", " ", cleaned)
     return cleaned.strip()
 
-def lemmatize(tokens):
-    # Applies text mining techniques from the NLTK package and 
-    # calculates the frequency distribution of words, excluding stopwords
-
+def standardize(tokens):
     # Remove single character tokens and numbers
     new_text = [w for w in tokens if len(w) > 3]
     new_text = [w for w in new_text if not w.isnumeric()]
@@ -73,15 +71,9 @@ def lemmatize(tokens):
     # De-punctuate and convert to lowercase
     new_text = [w.lower() for w in new_text if w.isalpha()]
    
+    # Keep words with more than 3 letters
     new_text = [w for w in new_text if len(w) > 3]
     return(new_text) 
-
-def get_synonyms(word):
-    syns = []
-    for synset in wn.synsets(word):
-        for lemma in synset.lemmas():
-            syns.append(lemma.name())
-    return syns
 
 def avoid_truncated_words(i, some_text):
     # Starting from index i, back up until we reach a blank space
@@ -131,8 +123,7 @@ def main():
 
         if start_idx != -1:
             start_idx += len(start_text)
-            end_idx    = plain_text.find(":", start_idx + 1, 
-                                              start_idx + 180)
+            end_idx    = plain_text.find(":", start_idx + 1, start_idx + 180)
             if end_idx != -1:
                 end_idx = plain_text.find(":") - 1
             else:
@@ -141,19 +132,28 @@ def main():
             end_idx = avoid_truncated_words(end_idx, plain_text)
 
             #print start_idx, end_idx
-            all_interests = plain_text[start_idx:end_idx]
+            all_interests = plain_text[start_idx : end_idx]
             tokens   = nltk.word_tokenize(all_interests)
-            keywords = lemmatize(tokens)
+            keywords = standardize(tokens)
+
             for k in keywords:
                 if k in valid_words:
                     record = personID + "|" + k + "\n"
                     outfile.write(record.encode('utf8', errors='ignore'))
                     stem = snowball_stemmer.stem(k)
-                    record = personID + "|" + stem + "\n"
-                    outfile.write(record.encode('utf8', errors='ignore'))
-                    #for s in get_synonyms(k):
-                    #    record = personID + "|" + s + "\n"
-                    #    outfile.write(record.encode('utf8', errors='ignore'))
+                    if stem != k:
+                        record = personID + "|" + stem + "\n"
+                        outfile.write(record.encode('utf8', errors='ignore'))
+
+                    more_words = get_custom_synonyms(k)
+                    if more_words:
+                        for w in more_words:
+                            record = personID + "|" + w + "\n"
+                            outfile.write(record.encode('utf8', errors='ignore'))
+                            stem = snowball_stemmer.stem(w)
+                            if stem not in [k,w]:
+                                record = personID + "|" + stem + "\n"
+                                outfile.write(record.encode('utf8', errors='ignore'))
 
     urlfile.close()
     outfile.close()
