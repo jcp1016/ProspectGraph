@@ -1,16 +1,17 @@
 import nltk
-from nltk.stem import SnowballStemmer
+from nltk.stem import SnowballStemmer, WordNetLemmatizer
 from html2text import html2text
 import os, sys, re
 from bottle import get, post, route, run, debug, request, response, static_file, template
 from py2neo import Graph
 from site_keywords import fetch_html, clean_html, compute_fdist
-#from synonyms import get_synonyms
 
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-snowball_stemmer = SnowballStemmer("english")
+# Globals
+snowball_stemmer   = SnowballStemmer("english")
+wordnet_lemmatizer = WordNetLemmatizer()
 
 # set connection information (defaults to http://localhost:7474/db/data/)
 graph_db = Graph()
@@ -47,15 +48,18 @@ def submit(data='', keywords=''):
         else:
             html_text  = clean_html(html_text)
             plain_text = html2text(html_text)
-            tokens = nltk.word_tokenize(plain_text)
-            wordfreqs = compute_fdist(tokens)
-            more_words = []
+            tokens     = nltk.word_tokenize(plain_text)
+            wordfreqs  = compute_fdist(tokens)
             for word, freq in wordfreqs.most_common(N):
                 word = word.strip()
                 if freq > 1:
+                    # Keep the word, the lemma, and the stem
                     keywords.append(word)
+                    lemma = wordnet_lemmatizer.lemmatize(word)
+                    if lemma and (lemma != word):
+                        keywords.append(lemma)
                     stem = snowball_stemmer.stem(word)
-                    if stem and stem != word:
+                    if stem and (stem not in [word, lemma]):
                         keywords.append(stem)
 
             if len(keywords) > 0:
@@ -70,10 +74,12 @@ def submit(data='', keywords=''):
                     "                c.raisedAmount as funds, " \
                     "                c.companySize as size, " \
                     "                c.companyURL as website, " \
-                    "                c.primaryLocation as location " \
+                    "                c.primaryLocation as location, " \
+                    "                p.profileURL as profile " \
                     "ORDER BY c.raisedAmount DESC", {"keywords": keywords})
             else:
                 results = "Sorry, no keywords found on this site."
+
     return template("index.tpl", data=results, keywords=keywords, orgname=orgname)
                           
 #run(host='10.0.0.8', port=8080, debug=False)

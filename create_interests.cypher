@@ -11,8 +11,7 @@
 // ./bin/neo4j-shell -file $BDA_DEV/create_interests.cypher > $BDA_DEV/DATA/interest_results.txt
 //----------------------------------------------------------------------------------------------
 export NODE_FILE="file:/Users/janetprumachuk/dev/Python/Columbia/bda-dev/interest_nodes.csv"
-export EDGE_FILE="file:/Users/janetprumachuk/dev/Python/Columbia/bda-dev/all_interests.csv"
-//export EDGE_FILE="file:/Users/janetprumachuk/dev/Python/Columbia/bda-dev/test.csv"
+export EDGE_FILE="file:/Users/janetprumachuk/dev/Python/Columbia/bda-dev/all_likes.csv"
 
 MATCH (i:Interest)
 DETACH DELETE i;

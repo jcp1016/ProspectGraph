@@ -10,6 +10,7 @@ import re, nltk, urllib2, sys, mechanize
 from html2text import html2text 
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+from synonyms import get_custom_synonyms
 
 def fetch_html(url_string):
     br = mechanize.Browser()
@@ -44,9 +45,6 @@ def clean_html(html):
     return cleaned.strip()
 
 def compute_fdist(tokens):
-    # Applies text mining techniques from the NLTK package and 
-    # calculates the frequency distribution of words, excluding stopwords
-
     # Remove single character tokens and numbers
     new_text = [w for w in tokens if len(w) > 3]
     new_text = [w for w in new_text if not w.isnumeric()]
