@@ -13,7 +13,7 @@ def get_custom_synonyms(word):
     syns = []
     if word == 'animal':
         syns = ['dog', 'cat', 'pet', 'wildlife']
-    elif word == 'arts' or word == 'culture': 
+    elif word == 'arts': 
         syns = ['garden', 'film', 'society', 'poetry', 'festival', 'guild']
     elif word == 'children':
         syns = ['childhood', 'child', 'student', 'youth', 'boys', 'girls', 'brothers', 'sisters']
@@ -22,7 +22,7 @@ def get_custom_synonyms(word):
     elif word == 'education':
         syns = ['graduate', 'graduation', 'scholarship', 'scholar', 'mentor', 'mentoring']
     elif word == 'environment':
-        syns = ['climate', 'planet', 'LEED', 'green', 'natural', 'earth']
+        syns = ['climate', 'planet', 'leed', 'green', 'natural', 'earth']
     elif word == 'health':
         syns = ['runners', 'running', 'marathon', 'race', 'cancer', 'diabetes', 'research', 'cure', 'hospital']
     return(syns)
