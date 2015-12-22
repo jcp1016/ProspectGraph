@@ -15,9 +15,6 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!--<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
-
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
 
@@ -72,14 +69,23 @@
             <button type="submit" class="btn btn-info btn-lg center-block">Search</button>&nbsp;
           </form>
         </div><!-- end of page-header -->
-        <p> Keywords: {{keywords}} </p>
+        <div id="keywords">
+          %keys = ', '.join(str(k) for k in keywords)
+          %if len(keywords) > 12:
+              <p> Keywords: <br class="clear" />{{keys}} </p>
+          %elif len(keywords) > 1:
+              <p> Keywords: {{keys}} </p>
+          %else:
+              <p> {{keys}} </p>
+          %end
+        </div>
       </div><!-- end of jumbotron container -->
     </div><!-- end of jumbotron -->
 
     <!-- Data output area -->
     <!-- Load elements into a 2 dimenstional list -->
     %matrix = ([])
-    %if data != '' and data[0:5] != 'Error' and data[0:5] != 'Sorry':
+    %if data != '' and data[0:6] != 'Please' and data[0:5] != 'Sorry':
         %for row in data:
             %matrix.append(row)
         %end
@@ -106,8 +112,7 @@
                 <div class="table-responsive">
                     <table class="table table-bordered table-condensed">
                         <tr>
-                          <td>{{row[2]}} at <a href={{row[6]}} target="_blank">
-                                               {{row[3]}}</a></td>
+                          <td>{{row[2]}} at <a href={{row[6]}} target="_blank">{{row[3]}}</a></td>
                         </tr>
                         <tr>
                           <th>Company Size</th>
@@ -142,6 +147,6 @@
     </script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://github.com/twbs/bootstrap/blob/master/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

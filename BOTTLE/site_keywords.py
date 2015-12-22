@@ -72,7 +72,11 @@ def compute_fdist(tokens):
                    'stay', 'height', 'video', 'email', 'money', 'news',
                    'opportunity', 'donate', 'press', 'faq', 'infographic',
                    'find', 'save', 'new', 'site', 'story', 'view', 'share',
-                   'become', 'center', 'holiday']
+                   'become', 'center', 'holiday', 'january', 'february',
+                   'march', 'april', 'may', 'june', 'july', 'august', 
+                   'september', 'october', 'november', 'december', 'sunday', 
+                   'monday', 'tuesday', 'wednesday', 'thursday', 'friday',
+                   'saturday', 'policy', 'every', 'please', 'change']
 
     custom_stopwords = [unicode(i) for i in custom_list]
     stopwords.extend( custom_stopwords )

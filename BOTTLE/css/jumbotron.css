@@ -8,7 +8,7 @@ body {
   /* height: 200px; */
   font-size: 14pt;
 }
-#tagline{
+#tagline {
   margin: 0 auto;
   width: 100%;
   text-align: center;
@@ -42,4 +42,15 @@ body {
     color: white;
     font-size: 16pt;
 }
+#logo {
+  float: right;
+}
+#keywords {
+    margin: 0 auto;
+    text-align: center;
+}
+#keywords > p {
+    font-size: 14pt;
+}
+
 
