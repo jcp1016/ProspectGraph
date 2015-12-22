@@ -52,7 +52,7 @@ import com.gargoylesoftware.htmlunit.WebRequest;
 #---------------------------------------------------------------------
 # neorest.java
 #
-# Desc  :  Test neo4j java rest api.
+# Desc  :  Test neo4j rest api.
 #
 # Author:  John Correa
 # Date  :  Dec 2015 change
