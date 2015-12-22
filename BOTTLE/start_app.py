@@ -82,5 +82,5 @@ def submit(data='', keywords=''):
 
     return template("index.tpl", data=results, keywords=keywords, orgname=orgname)
                           
-#run(host='10.0.0.8', port=8080, debug=False)
-run(host='localhost', port=8080, debug=False)
+run(host='10.0.0.8', port=8080, debug=False)
+#run(host='localhost', port=8080, debug=False)
