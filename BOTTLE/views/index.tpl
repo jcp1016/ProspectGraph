@@ -43,7 +43,7 @@
           <!-- <form class="navbar-form navbar-right"> -->
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="http://mission-match.mine.nu">Graph</a></li>
+            <li><a href="#graph">Graph</a></li>
             <li><a href="#project">Project</a></li>
             <li><a href="#team">Team</a></li>
           </ul>
@@ -55,19 +55,23 @@
     <div class="jumbotron">
       <div class="container">
         <div class="page-header"> 
-          <div id="tagline">
-            Find angels who care about your organization's mission.
-          </div>
-          <form class="search" action="/" role="form" id="get_org_form" method="post">
-            <div class="input-group input-group-lg">
-              <span class="input-group-addon">http://www.</span>
-              <input type="text" name="orgname" class="form-control input-lg" 
-                     placeholder="orgname" autofocus value={{orgname}} >
-              <span class="input-group-addon">.org</span>
-            </div> <!-- end of input group -->
-            <br class="clear" />
-            <button type="submit" class="btn btn-info btn-lg center-block">Search</button>&nbsp;
-          </form>
+          <div id="header-group">
+          <fieldset>
+            <div id="tagline">
+            Find angels who care about your organization's mission
+            </div>
+            <form class="search" action="/" role="form" id="get_org_form" method="post">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon">http://www.</span>
+                <input type="text" name="orgname" class="form-control input-lg" 
+                       placeholder="orgname" autofocus value={{orgname}} >
+                <span class="input-group-addon">.org</span>
+              </div> <!-- end of input group -->
+              <br class="clear" />
+              <button type="submit" class="btn btn-info btn-lg center-block">Search</button>
+            </form>
+          </fieldset>
+          </div><!-- end of header-group -->
         </div><!-- end of page-header -->
         <div id="keywords">
           %keys = ', '.join(str(k) for k in keywords)
@@ -102,7 +106,7 @@
         %end
         <div class="col-md-4">
             <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading panel-heading-custom">
                     <b>{{row[0]}} <br class="clear" /></b>
                 </div>
                 <div class="panel-body">

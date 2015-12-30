@@ -4,7 +4,7 @@ body {
   padding-bottom: 20px;
 }
 .jumbotron {
-  background-color: #ddd;
+  background-color: @gray-lighter;
   /* height: 200px; */
   font-size: 14pt;
 }
@@ -13,13 +13,21 @@ body {
   width: 100%;
   text-align: center;
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: normal;
 }
 #search{
   margin: 0 auto;
 }
+#header-group {
+  background: rgba(256,256,256,0.9);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  width: 65%;
+  border-radius: 15px;    
+}
 .input-group {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   font-size: 14pt;
   text-align: center;
@@ -30,7 +38,6 @@ body {
   margin: 0 auto;
 }
 .input-group-addon {
-  background-color: #f7fbfd;
   margin: 0 auto;
   font-size: 14pt;
 }
@@ -39,8 +46,11 @@ body {
   height: 0px;
 }
 .navbar-inverse .navbar-brand {
-    color: white;
-    font-size: 16pt;
+  color: white;
+  font-size: 16pt;
+}
+.panel-default > .panel-heading-custom {
+  background: #eaf7f9;
 }
 #logo {
   float: right;
