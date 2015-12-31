@@ -21,6 +21,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <image src="assets/winter-trees.jpg" width="1" height="1" border="0">
 </head>
 
 <body id="myPage">
