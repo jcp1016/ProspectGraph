@@ -28,6 +28,10 @@ def img_static(filename):
 def img_static(filename):
     return static_file(filename, root='./css')
 
+@route('/assets/<filename>')
+def img_static(filename):
+    return static_file(filename, root='./assets')
+
 @route('/')
 def index():
     return template("index.tpl", data='', keywords='', orgname='')
@@ -38,7 +42,7 @@ def submit(data='', keywords=''):
     keywords = []
     results = []
     if not orgname:
-        keywords.append("Error: please enter an organization name.")
+        keywords.append("Please enter an organization name.")
     else:
         N = 10
         url = "http://www." + orgname + ".org"
@@ -82,5 +86,5 @@ def submit(data='', keywords=''):
 
     return template("index.tpl", data=results, keywords=keywords, orgname=orgname)
                           
-run(host='10.0.0.8', port=8080, debug=False)
-#run(host='localhost', port=8080, debug=False)
+#run(host='10.0.0.8', port=8080, debug=False)
+run(host='localhost', port=8080, debug=False)

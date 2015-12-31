@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <title>Mission Match</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; 
-         any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
-    <title>Big Data Analytics Final Project</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>`
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
@@ -23,9 +21,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
+<body id="myPage">
+
     <!-- Top navigation bar common to all pages -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -39,9 +38,10 @@
           </button>
           <span class="navbar-brand"><p>Mission Match</p></span>
         </div><!--/navbar-header -->
+
         <div id="navbar" class="navbar-collapse collapse">
           <!-- <form class="navbar-form navbar-right"> -->
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#graph">Graph</a></li>
             <li><a href="#project">Project</a></li>
@@ -52,39 +52,36 @@
     </nav>
 
     <!-- Graphical area at top of home page, includes the input form -->
-    <div class="jumbotron">
+    <div class="jumbotron text-center">
       <div class="container">
-        <div class="page-header"> 
-          <div id="header-group">
-          <fieldset>
+        <div id="search-group">
             <div id="tagline">
-            Find angels who care about your organization's mission
+              <p class="lead text-center">Find angels who care about your organization's mission</p>
             </div>
             <form class="search" action="/" role="form" id="get_org_form" method="post">
-              <div class="input-group input-group-lg">
+              <div class="input-group">
                 <span class="input-group-addon">http://www.</span>
-                <input type="text" name="orgname" class="form-control input-lg" 
-                       placeholder="orgname" autofocus value={{orgname}} >
+                <input class="form-control" type="text" name="orgname"  
+                  placeholder="orgname" autofocus value={{orgname}} >
                 <span class="input-group-addon">.org</span>
               </div> <!-- end of input group -->
-              <br class="clear" />
-              <button type="submit" class="btn btn-info btn-lg center-block">Search</button>
+              <br /> 
+              <div><button type="submit" class="btn btn-info center-block">
+                Search&nbsp;<span class="glyphicon glyphicon-search"></span>
+              </button></div> 
             </form>
-          </fieldset>
-          </div><!-- end of header-group -->
-        </div><!-- end of page-header -->
-        <div id="keywords">
-          %keys = ', '.join(str(k) for k in keywords)
-          %if len(keywords) > 12:
-              <p> Keywords: <br class="clear" />{{keys}} </p>
-          %elif len(keywords) > 1:
-              <p> Keywords: {{keys}} </p>
-          %else:
-              <p> {{keys}} </p>
-          %end
-        </div>
+        </div> <!-- end of search-group -->
       </div><!-- end of jumbotron container -->
     </div><!-- end of jumbotron -->
+
+    <div id="keywords">
+      %keys = ', '.join(str(k) for k in keywords)
+      %if len(keywords) > 1:
+          <p> Keywords: {{keys}} </p>
+      %else:
+          <p> {{keys}} </p>
+      %end
+    </div>
 
     <!-- Data output area -->
     <!-- Load elements into a 2 dimenstional list -->
@@ -105,7 +102,7 @@
             <div class="row">
         %end
         <div class="col-md-4">
-            <div class="panel panel-default">
+            <div class="panel panel-default slideanim">
                 <div class="panel-heading panel-heading-custom">
                     <b>{{row[0]}} <br class="clear" /></b>
                 </div>
@@ -146,11 +143,10 @@
       ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-      window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')
-    </script>
+    <script> window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://github.com/twbs/bootstrap/blob/master/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+
+</body>
 </html>
