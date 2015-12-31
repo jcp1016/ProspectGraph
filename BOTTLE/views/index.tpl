@@ -44,7 +44,7 @@
           <!-- <form class="navbar-form navbar-right"> -->
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#graph">Graph</a></li>
+            <li><a href="http://mission-match.mine.nu">Graph</a></li>
             <li><a href="#project">Project</a></li>
             <li><a href="#team">Team</a></li>
           </ul>
